@@ -1,0 +1,24 @@
+# Config sensible
+includes/config.php
+config/secrets.php
+.env
+*.env
+
+# Logs & cache
+storage/logs/
+storage/cache/
+*.log
+
+# Uploads utilisateurs
+assets/uploads/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# PHP
+vendor/

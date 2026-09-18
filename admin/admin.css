@@ -1,0 +1,177 @@
+/* -------------------------------------------------------------
+   ADMIN IBIG IMMO TRUST - STYLE SIMPLE & PROFESSIONNEL
+   Palette : Bleu #003c96 / Gris clair #f4f6fb / Blanc #fff
+-------------------------------------------------------------- */
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #f4f6fb;
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #1f2937;
+}
+
+/* Container global */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Titres */
+h1, h2, h3 {
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #003c96;
+}
+
+/* Formulaire global */
+form {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+label {
+    font-size: 14px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 4px;
+    color: #1f2937;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="password"],
+textarea,
+select {
+    width: 100%;
+    padding: 8px 10px;
+    border-radius: 6px;
+    border: 1px solid #d1d5db;
+    font-size: 14px;
+    background: #fff;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Boutons */
+button,
+.btn-main {
+    background: #003c96;
+    color: #ffffff;
+    padding: 10px 16px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+button:hover,
+.btn-main:hover {
+    opacity: 0.9;
+}
+
+/* Checkbox */
+input[type="checkbox"] {
+    transform: scale(1.1);
+}
+
+/* Sections visuelles */
+.section-title {
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 25px;
+    margin-bottom: 8px;
+    color: #003c96;
+}
+
+/* Cartes simples */
+.card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+/* Tableaux */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table th {
+    background: #003c96;
+    color: #fff;
+    padding: 10px;
+    font-size: 14px;
+    text-align: left;
+}
+
+table td {
+    padding: 8px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+table tr:hover td {
+    background: #f9fafb;
+}
+
+/* Champs alignés en grille */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+    gap: 14px;
+}
+
+/* Alertes */
+.alert {
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.alert-error {
+    background: #fde2e2;
+    border: 1px solid #ef4444;
+    color: #b91c1c;
+}
+
+.alert-success {
+    background: #e6f8ec;
+    border: 1px solid #16a34a;
+    color: #065f46;
+}
+
+/* Images */
+img.preview {
+    width: 160px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+/* Zone de checkboxes (caractéristiques) */
+.carac-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px,1fr));
+    gap: 6px;
+    margin-bottom: 18px;
+    font-size: 13px;
+}
+
+/* Inputs multiples */
+input[type="file"] {
+    margin-top: 6px;
+    font-size: 14px;
+}
