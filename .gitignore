@@ -12,6 +12,10 @@ storage/cache/
 # Uploads utilisateurs
 assets/uploads/
 
+# Fichiers lourds (base de données GeoIP)
+includes/GeoLite2-City.mmdb
+includes/*.mmdb
+
 # OS
 .DS_Store
 Thumbs.db
