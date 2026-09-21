@@ -65,7 +65,7 @@ $serviceCards = [
         'cta' => 'Voir le processus',
     ],
     [
-        'image' => url('assets/img/suivi-diaspora.jpg'),
+        'image' => url('assets/img/gestion-locative3.jpg'),
         'tag' => 'Diaspora',
         'title' => 'Suivi à distance',
         'text' => "Photos, vidéos, points d'étape, documents et arbitrages à distance pour les propriétaires et investisseurs hors du pays.",
@@ -930,7 +930,7 @@ include __DIR__ . '/includes/header.php';
   <section class="btp-section btp-section--soft">
     <div class="btp-shell btp-split">
       <div class="btp-split-card">
-        <img src="<?= e(url('assets/img/suivi-diaspora.jpg')) ?>" alt="Suivi diaspora BTP IBIG IMMO TRUST">
+        <img src="<?= e(url('assets/img/gestion-locative3.jpg')) ?>" alt="Suivi diaspora BTP IBIG IMMO TRUST">
         <div class="btp-split-card__body">
           <h3>Suivi renforcé pour la diaspora</h3>
           <p>

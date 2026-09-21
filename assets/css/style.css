@@ -475,7 +475,7 @@ body {
   content: '';
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: url('/assets/img/hero-bg.jpg') center/cover no-repeat;
+  background: url('/assets/img/hero-immo-afrique.jpg') center/cover no-repeat;
   opacity: 0.15;
 }
 
@@ -1761,7 +1761,7 @@ body {
   content: '';
   position: absolute;
   inset: 0;
-  background: url('/assets/img/hero-bg.jpg') center/cover no-repeat;
+  background: url('/assets/img/hero-immo-afrique.jpg') center/cover no-repeat;
   opacity: 0.08;
 }
 

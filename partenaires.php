@@ -83,7 +83,7 @@ include __DIR__ . '/includes/header.php';
 
       <!-- PROMOTEURS -->
       <article class="card">
-        <img src="<?php echo BASE_URL; ?>/assets/img/projet-btp.jpg" class="card-img">
+        <img src="<?php echo BASE_URL; ?>/assets/img/construction-afrique2.jpg" class="card-img">
         <h3>Promoteurs immobiliers</h3>
         <p>
           Finishing, reprise de chantiers, valorisation, aménagements et gestion locative

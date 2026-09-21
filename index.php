@@ -1919,7 +1919,7 @@ include __DIR__ . '/includes/header.php';
   <section class="home-section home-section--soft">
     <div class="home-shell home-split">
       <div class="home-media-card">
-        <img src="<?= home_h(url('assets/img/suivi-diaspora.jpg')) ?>" alt="Suivi diaspora avec IBIG IMMO TRUST">
+        <img src="<?= home_h(url('assets/img/gestion-locative3.jpg')) ?>" alt="Suivi diaspora avec IBIG IMMO TRUST">
         <div class="home-media-card__overlay">
           <h3>Investir depuis l'étranger avec plus de contrôle</h3>
           <p>Suivi visuel, points d'étape, coordination terrain et meilleure lecture des dépenses et des délais.</p>

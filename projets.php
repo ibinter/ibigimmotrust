@@ -30,7 +30,7 @@ include __DIR__ . '/includes/header.php';
 
     <div class="hero-image">
       <div class="hero-img-main">
-        <img src="<?php echo BASE_URL; ?>/assets/img/projet-btp.jpg" alt="Projets IBIG IMMO TRUST">
+        <img src="<?php echo BASE_URL; ?>/assets/img/construction-afrique2.jpg" alt="Projets IBIG IMMO TRUST">
       </div>
     </div>
 
