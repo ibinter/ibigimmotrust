@@ -20,23 +20,23 @@ require_once __DIR__ . "/includes/header.php";
 
 <style>
 .ec-hero {
-  background: linear-gradient(135deg, #060d1a 0%, #0A1628 60%, #0f2044 100%);
+  background: linear-gradient(135deg, #1340B0 0%, #1B4FD8 60%, #1E57E8 100%);
   padding: 70px 0 55px;
   position: relative; overflow: hidden;
 }
 .ec-hero::before {
   content:''; position:absolute; top:-80px; right:-80px;
   width:380px; height:380px; border-radius:50%;
-  background:radial-gradient(circle,rgba(212,175,55,0.07) 0%,transparent 70%);
+  background:radial-gradient(circle,rgba(232,40,42,0.07) 0%,transparent 70%);
 }
-.ec-hero .kicker { font-size:11px; font-weight:800; letter-spacing:0.15em; text-transform:uppercase; color:#D4AF37; margin-bottom:14px; }
+.ec-hero .kicker { font-size:11px; font-weight:800; letter-spacing:0.15em; text-transform:uppercase; color:#E8282A; margin-bottom:14px; }
 .ec-hero h1 { font-size:clamp(22px,3vw,38px); font-weight:900; color:#fff; margin:0 0 10px; letter-spacing:-0.02em; }
 .ec-hero .desc { font-size:15px; color:rgba(255,255,255,0.65); max-width:600px; line-height:1.7; }
 .ec-hero .user-badge {
   display:inline-flex; align-items:center; gap:8px;
-  background:rgba(212,175,55,0.12); border:1px solid rgba(212,175,55,0.25);
+  background:rgba(232,40,42,0.12); border:1px solid rgba(232,40,42,0.25);
   border-radius:999px; padding:8px 16px; margin-top:20px;
-  font-size:13px; color:#D4AF37; font-weight:700;
+  font-size:13px; color:#E8282A; font-weight:700;
 }
 
 .ec-section { padding:60px 0; background:#FAF7F0; }
@@ -45,34 +45,34 @@ require_once __DIR__ . "/includes/header.php";
 }
 .ec-card {
   background:#fff; border-radius:16px; padding:28px;
-  box-shadow:0 6px 24px rgba(10,22,40,0.07);
-  border:1px solid rgba(10,22,40,0.06);
-  border-top:3px solid #D4AF37;
+  box-shadow:0 6px 24px rgba(27,79,216,0.07);
+  border:1px solid rgba(27,79,216,0.06);
+  border-top:3px solid #E8282A;
   transition:all 0.3s ease;
 }
-.ec-card:hover { transform:translateY(-4px); box-shadow:0 16px 40px rgba(10,22,40,0.12); }
+.ec-card:hover { transform:translateY(-4px); box-shadow:0 16px 40px rgba(27,79,216,0.12); }
 .ec-card .icon {
   width:46px; height:46px;
-  background:linear-gradient(135deg,#D4AF37,#A68920);
+  background:linear-gradient(135deg,#E8282A,#C01A1C);
   border-radius:12px;
   display:flex; align-items:center; justify-content:center;
-  color:#0A1628; font-size:18px; margin-bottom:16px;
+  color:#1B4FD8; font-size:18px; margin-bottom:16px;
 }
-.ec-card h3 { font-size:16px; font-weight:800; color:#0A1628; margin-bottom:8px; }
+.ec-card h3 { font-size:16px; font-weight:800; color:#1B4FD8; margin-bottom:8px; }
 .ec-card p { font-size:14px; color:#4B5563; line-height:1.7; margin-bottom:16px; }
 .ec-card-badge {
   display:inline-block; padding:4px 12px; border-radius:999px;
   font-size:11px; font-weight:800; letter-spacing:0.05em; text-transform:uppercase;
-  background:rgba(212,175,55,0.1); color:#A68920;
+  background:rgba(232,40,42,0.1); color:#C01A1C;
   margin-bottom:14px;
 }
 .ec-card-link {
   display:inline-flex; align-items:center; gap:6px;
-  font-size:13px; font-weight:800; color:#0A1628; text-decoration:none;
-  border-bottom:1.5px solid rgba(212,175,55,0.4); padding-bottom:2px;
+  font-size:13px; font-weight:800; color:#1B4FD8; text-decoration:none;
+  border-bottom:1.5px solid rgba(232,40,42,0.4); padding-bottom:2px;
   transition:all 0.2s;
 }
-.ec-card-link:hover { color:#A68920; border-color:#D4AF37; }
+.ec-card-link:hover { color:#C01A1C; border-color:#E8282A; }
 </style>
 
 <section class="ec-hero">

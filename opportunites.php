@@ -15,8 +15,8 @@ include __DIR__ . '/includes/header.php';
 /* GLOBAL */
 
 :root{
---red:#D4AF37;
---orange:#E8CC6A;
+--red:#E8282A;
+--orange:#FF5557;
 --dark:#0f172a;
 --text:#475569;
 --line:#e5e7eb;
@@ -38,7 +38,7 @@ margin:auto;
 
 .hero{
 background:
-linear-gradient(120deg,#060d1a,#A68920,#D4AF37,#E8CC6A);
+linear-gradient(120deg,#1340B0,#C01A1C,#E8282A,#FF5557);
 color:white;
 padding:160px 0;
 text-align:center;
@@ -75,7 +75,7 @@ text-decoration:none;
 
 .btn-main{
 background:white;
-color:#A68920;
+color:#C01A1C;
 }
 
 .btn-alt{
@@ -161,7 +161,7 @@ color:var(--text);
 /* CTA */
 
 .cta{
-background:linear-gradient(135deg,#0A1628,#D4AF37,#E8CC6A);
+background:linear-gradient(135deg,#1B4FD8,#E8282A,#FF5557);
 color:white;
 text-align:center;
 padding:120px 0;
@@ -179,7 +179,7 @@ margin-bottom:30px;
 
 .cta a{
 background:white;
-color:#A68920;
+color:#C01A1C;
 padding:18px 36px;
 border-radius:12px;
 font-weight:900;
@@ -226,7 +226,7 @@ font-size:32px;
 }
 
 .hero-op{
-background:linear-gradient(120deg,#0A1628,#A68920,#D4AF37,#E8CC6A);
+background:linear-gradient(120deg,#1B4FD8,#C01A1C,#E8282A,#FF5557);
 padding:140px 0;
 color:white;
 }
@@ -260,7 +260,7 @@ flex-wrap:wrap;
 
 .btn-main{
 background:#ffffff;
-color:#A68920;
+color:#C01A1C;
 padding:16px 32px;
 border-radius:12px;
 font-weight:800;

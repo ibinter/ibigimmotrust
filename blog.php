@@ -151,7 +151,7 @@ $extra = $queryExtra ? '&'.implode('&', $queryExtra) : '';
    HERO BLOG MAGAZINE – PREMIUM
 ============================== */
 .hero-blog-mag {
-    background: radial-gradient(circle at top left,#0f2044,#0A1628 50%,#060d1a);
+    background: radial-gradient(circle at top left,#1E57E8,#1B4FD8 50%,#1340B0);
     padding:70px 20px 50px;
     color:#fff;
 }
@@ -166,7 +166,7 @@ $extra = $queryExtra ? '&'.implode('&', $queryExtra) : '';
     font-size:14px;
     letter-spacing:.22em;
     text-transform:uppercase;
-    color:rgba(212,175,55,0.25);
+    color:rgba(232,40,42,0.25);
     font-weight:700;
 }
 .hero-blog-title {
@@ -312,7 +312,7 @@ $extra = $queryExtra ? '&'.implode('&', $queryExtra) : '';
     gap:6px;
     font-size:14px;
     font-weight:600;
-    color:rgba(212,175,55,0.6);
+    color:rgba(232,40,42,0.6);
     text-decoration:none;
 }
 .mag-featured-link:hover{
@@ -367,7 +367,7 @@ $extra = $queryExtra ? '&'.implode('&', $queryExtra) : '';
 .mag-card-title{
     font-size:16px;
     font-weight:700;
-    color:#0f2044;
+    color:#1E57E8;
 }
 .mag-card-excerpt{
     font-size:14px;
@@ -404,7 +404,7 @@ $extra = $queryExtra ? '&'.implode('&', $queryExtra) : '';
 .sb-title{
     font-size:15px;
     font-weight:700;
-    color:#0f2044;
+    color:#1E57E8;
     margin-bottom:10px;
 }
 
@@ -419,7 +419,7 @@ $extra = $queryExtra ? '&'.implode('&', $queryExtra) : '';
 .sb-recent-link{
     text-decoration:none;
     font-size:14px;
-    color:#0f2044;
+    color:#1E57E8;
     font-weight:600;
 }
 .sb-recent-link:hover{
@@ -438,7 +438,7 @@ $extra = $queryExtra ? '&'.implode('&', $queryExtra) : '';
     padding:5px 0;
     font-size:14px;
     text-decoration:none;
-    color:#0f2044;
+    color:#1E57E8;
 }
 .sb-cat-list a span.count{
     font-size:11px;
@@ -457,11 +457,11 @@ $extra = $queryExtra ? '&'.implode('&', $queryExtra) : '';
     background:#e2e8f0;
     border-radius:12px;
     text-decoration:none;
-    color:#0f2044;
+    color:#1E57E8;
     font-weight:600;
 }
 .sb-tag:hover{
-    background:#0f2044;
+    background:#1E57E8;
     color:#fff;
 }
 
@@ -478,17 +478,17 @@ $extra = $queryExtra ? '&'.implode('&', $queryExtra) : '';
     margin:0 3px;
     border-radius:8px;
     background:#e2e8f0;
-    color:#0f2044;
+    color:#1E57E8;
     font-size:13px;
     font-weight:600;
     text-decoration:none;
 }
 .pagination a.active{
-    background:#0f2044;
+    background:#1E57E8;
     color:#fff;
 }
 .pagination a:hover{
-    background:#0A1628;
+    background:#1B4FD8;
     color:#fff;
 }
 </style>

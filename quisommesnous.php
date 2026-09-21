@@ -88,9 +88,9 @@ include __DIR__ . '/includes/header.php';
 
 <style>
 :root {
-  --about-blue:#0A1628;
-  --about-blue-dark:#060d1a;
-  --about-red:#D4AF37;
+  --about-blue:#1B4FD8;
+  --about-blue-dark:#1340B0;
+  --about-red:#E8282A;
   --about-gold:#f4bc49;
   --about-ink:#101828;
   --about-ink-soft:#1d2939;
@@ -128,7 +128,7 @@ include __DIR__ . '/includes/header.php';
 .about-section--cta {
   background:
     radial-gradient(circle at top left, rgba(255,255,255,.08), transparent 20%),
-    linear-gradient(135deg, #060d1a 0%, #0A1628 48%, #D4AF37 100%);
+    linear-gradient(135deg, #1340B0 0%, #1B4FD8 48%, #E8282A 100%);
   color:#fff;
 }
 
@@ -171,8 +171,8 @@ include __DIR__ . '/includes/header.php';
   padding:34px 0 44px;
   background:
     radial-gradient(circle at 10% 10%, rgba(244,188,73,.18), transparent 24%),
-    radial-gradient(circle at 90% 18%, rgba(212,175,55,.18), transparent 22%),
-    linear-gradient(135deg, #060d1a 0%, #0A1628 52%, #D4AF37 100%);
+    radial-gradient(circle at 90% 18%, rgba(232,40,42,.18), transparent 22%),
+    linear-gradient(135deg, #1340B0 0%, #1B4FD8 52%, #E8282A 100%);
   color:#fff;
 }
 
@@ -279,7 +279,7 @@ include __DIR__ . '/includes/header.php';
 .about-button--ghost {
   background:#fff4ef;
   color:var(--about-red);
-  border-color:rgba(212,175,55,.10);
+  border-color:rgba(232,40,42,.10);
 }
 
 .about-button--light {
@@ -420,7 +420,7 @@ include __DIR__ . '/includes/header.php';
   align-items:center;
   justify-content:center;
   border-radius:18px;
-  background:linear-gradient(135deg, rgba(10,22,40,.08), rgba(212,175,55,.12));
+  background:linear-gradient(135deg, rgba(27,79,216,.08), rgba(232,40,42,.12));
   color:var(--about-blue);
   font-size:22px;
   margin-bottom:14px;
@@ -471,8 +471,8 @@ include __DIR__ . '/includes/header.php';
   min-width:24px;
   margin-top:2px;
   border-radius:999px;
-  background:linear-gradient(135deg, rgba(10,22,40,.12), rgba(212,175,55,.12));
-  box-shadow:inset 0 0 0 6px rgba(10,22,40,.14);
+  background:linear-gradient(135deg, rgba(27,79,216,.12), rgba(232,40,42,.12));
+  box-shadow:inset 0 0 0 6px rgba(27,79,216,.14);
 }
 
 .about-cta-inner {

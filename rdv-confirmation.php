@@ -36,7 +36,7 @@ include __DIR__ . '/includes/header.php';
 .rdv-confirm-title{
     font-size:26px;
     font-weight:800;
-    color:#0A1628;
+    color:#1B4FD8;
     margin-bottom:8px;
 }
 
@@ -80,7 +80,7 @@ include __DIR__ . '/includes/header.php';
 }
 
 .rdv-btn-main{
-    background:#0A1628;
+    background:#1B4FD8;
     color:#fff;
 }
 
@@ -90,7 +90,7 @@ include __DIR__ . '/includes/header.php';
 
 .rdv-btn-ghost{
     background:#ffffff;
-    color:#0A1628;
+    color:#1B4FD8;
     border-color:#cbd5f5;
 }
 
@@ -134,7 +134,7 @@ include __DIR__ . '/includes/header.php';
       <div class="rdv-confirm-infos">
         <p>
           Pour toute urgence, vous pouvez nous joindre directement au :<br>
-          <strong><a href="tel:+2250778882592" style="color:#0A1628;text-decoration:none;">
+          <strong><a href="tel:+2250778882592" style="color:#1B4FD8;text-decoration:none;">
             +225 07 78 88 25 92
           </a></strong>
           ou par WhatsApp.

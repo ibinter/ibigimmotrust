@@ -16,7 +16,7 @@ include __DIR__ . '/includes/header.php';
 <style>
 /* ===== HERO CONTACT ===== */
 .hero-contact {
-  background: linear-gradient(135deg, #060d1a 0%, #0A1628 60%, #0f2044 100%);
+  background: linear-gradient(135deg, #1340B0 0%, #1B4FD8 60%, #1E57E8 100%);
   padding: 80px 0 60px;
   position: relative;
   overflow: hidden;
@@ -27,7 +27,7 @@ include __DIR__ . '/includes/header.php';
   top: -80px; right: -80px;
   width: 400px; height: 400px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(212,175,55,0.07) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(232,40,42,0.07) 0%, transparent 70%);
   pointer-events: none;
 }
 .hero-contact .hero-kicker {
@@ -35,7 +35,7 @@ include __DIR__ . '/includes/header.php';
   font-weight: 800;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: #D4AF37;
+  color: #E8282A;
   margin-bottom: 18px;
 }
 .hero-contact h1 {
@@ -46,7 +46,7 @@ include __DIR__ . '/includes/header.php';
   letter-spacing: -0.02em;
   line-height: 1.15;
 }
-.hero-contact h1 span { color: #D4AF37; }
+.hero-contact h1 span { color: #E8282A; }
 .hero-contact .hero-desc {
   font-size: 16px;
   color: rgba(255,255,255,0.65);
@@ -68,7 +68,7 @@ include __DIR__ . '/includes/header.php';
   font-weight: 600;
   color: rgba(255,255,255,0.65);
 }
-.hero-contact-badges .badge-item i { color: #D4AF37; font-size: 14px; }
+.hero-contact-badges .badge-item i { color: #E8282A; font-size: 14px; }
 
 /* ===== SECTION CONTACT MAIN ===== */
 .contact-main {
@@ -90,13 +90,13 @@ include __DIR__ . '/includes/header.php';
   background: #fff;
   border-radius: 18px;
   padding: 40px;
-  box-shadow: 0 8px 40px rgba(10,22,40,0.10);
-  border: 1px solid rgba(10,22,40,0.06);
+  box-shadow: 0 8px 40px rgba(27,79,216,0.10);
+  border: 1px solid rgba(27,79,216,0.06);
 }
 .contact-form-card h2 {
   font-size: 22px;
   font-weight: 800;
-  color: #0A1628;
+  color: #fff;
   margin: 0 0 6px;
 }
 .contact-form-card .form-sub {
@@ -111,7 +111,7 @@ include __DIR__ . '/includes/header.php';
   display: block;
   font-size: 13px;
   font-weight: 700;
-  color: #0A1628;
+  color: #fff;
   margin-bottom: 6px;
   letter-spacing: 0.02em;
 }
@@ -133,8 +133,8 @@ include __DIR__ . '/includes/header.php';
 .form-row input:focus,
 .form-row select:focus,
 .form-row textarea:focus {
-  border-color: #A68920;
-  box-shadow: 0 0 0 3px rgba(212,175,55,0.12);
+  border-color: #C01A1C;
+  box-shadow: 0 0 0 3px rgba(232,40,42,0.12);
 }
 .form-row textarea { min-height: 120px; resize: vertical; }
 .form-row-2col {
@@ -146,8 +146,8 @@ include __DIR__ . '/includes/header.php';
 .btn-contact-submit {
   width: 100%;
   padding: 15px 30px;
-  background: linear-gradient(135deg, #D4AF37, #A68920);
-  color: #0A1628;
+  background: linear-gradient(135deg, #E8282A, #C01A1C);
+  color: #fff;
   border: none;
   border-radius: 999px;
   font-size: 15px;
@@ -162,7 +162,7 @@ include __DIR__ . '/includes/header.php';
   margin-top: 10px;
 }
 .btn-contact-submit:hover {
-  box-shadow: 0 8px 25px rgba(212,175,55,0.45);
+  box-shadow: 0 8px 25px rgba(232,40,42,0.45);
   transform: translateY(-2px);
 }
 .alert {
@@ -182,13 +182,13 @@ include __DIR__ . '/includes/header.php';
   background: #fff;
   border-radius: 16px;
   padding: 28px;
-  box-shadow: 0 4px 20px rgba(10,22,40,0.07);
-  border: 1px solid rgba(10,22,40,0.06);
+  box-shadow: 0 4px 20px rgba(27,79,216,0.07);
+  border: 1px solid rgba(27,79,216,0.06);
 }
 .contact-info-card h3 {
   font-size: 15px;
   font-weight: 800;
-  color: #0A1628;
+  color: #fff;
   margin: 0 0 18px;
   display: flex;
   align-items: center;
@@ -196,8 +196,8 @@ include __DIR__ . '/includes/header.php';
 }
 .contact-info-card h3 i {
   width: 34px; height: 34px;
-  background: linear-gradient(135deg, #D4AF37, #A68920);
-  color: #0A1628;
+  background: linear-gradient(135deg, #E8282A, #C01A1C);
+  color: #fff;
   border-radius: 8px;
   display: flex; align-items: center; justify-content: center;
   font-size: 13px;
@@ -214,16 +214,16 @@ include __DIR__ . '/includes/header.php';
 }
 .contact-detail-list li .icon {
   width: 30px; height: 30px;
-  background: rgba(212,175,55,0.1);
+  background: rgba(232,40,42,0.1);
   border-radius: 7px;
   display: flex; align-items: center; justify-content: center;
-  color: #A68920;
+  color: #C01A1C;
   font-size: 12px;
   flex-shrink: 0;
   margin-top: 1px;
 }
-.contact-detail-list li a { color: #0A1628; font-weight: 600; text-decoration: none; }
-.contact-detail-list li a:hover { color: #D4AF37; }
+.contact-detail-list li a { color: #fff; font-weight: 600; text-decoration: none; }
+.contact-detail-list li a:hover { color: #E8282A; }
 
 /* Horaires */
 .horaires-grid { display: flex; flex-direction: column; gap: 8px; }
@@ -235,7 +235,7 @@ include __DIR__ . '/includes/header.php';
   border-radius: 8px;
   background: #F8F6F0;
 }
-.horaire-row .jour { font-weight: 700; color: #0A1628; }
+.horaire-row .jour { font-weight: 700; color: #fff; }
 .horaire-row .heure { color: #6B7280; }
 .horaire-row.open .heure { color: #059669; font-weight: 700; }
 
@@ -244,14 +244,14 @@ include __DIR__ . '/includes/header.php';
   display: flex;
   align-items: center;
   gap: 12px;
-  background: linear-gradient(135deg, #0A1628, #0f2044);
+  background: linear-gradient(135deg, #1B4FD8, #1E57E8);
   border-radius: 16px;
   padding: 24px;
   text-decoration: none;
   transition: all 0.3s ease;
-  border: 1px solid rgba(212,175,55,0.15);
+  border: 1px solid rgba(232,40,42,0.15);
 }
-.whatsapp-cta:hover { transform: translateY(-3px); box-shadow: 0 12px 35px rgba(10,22,40,0.2); }
+.whatsapp-cta:hover { transform: translateY(-3px); box-shadow: 0 12px 35px rgba(27,79,216,0.2); }
 .whatsapp-cta .wa-icon {
   width: 50px; height: 50px;
   background: #25D366;
@@ -281,8 +281,8 @@ include __DIR__ . '/includes/header.php';
 .map-wrapper {
   border-radius: 18px;
   overflow: hidden;
-  box-shadow: 0 8px 40px rgba(10,22,40,0.12);
-  border: 1px solid rgba(10,22,40,0.06);
+  box-shadow: 0 8px 40px rgba(27,79,216,0.12);
+  border: 1px solid rgba(27,79,216,0.06);
   height: 350px;
 }
 .map-wrapper iframe { width: 100%; height: 100%; border: none; display: block; }

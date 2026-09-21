@@ -600,11 +600,11 @@ include __DIR__ . '/includes/header.php';
 
 <style>
 :root {
-  --home-blue:#0A1628;
-  --home-blue-dark:#060d1a;
-  --home-red:#D4AF37;
-  --home-red-dark:#A68920;
-  --home-gold:#E8CC6A;
+  --home-blue:#1B4FD8;
+  --home-blue-dark:#1340B0;
+  --home-red:#E8282A;
+  --home-red-dark:#C01A1C;
+  --home-gold:#FF5557;
   --home-ink:#101828;
   --home-ink-soft:#1d2939;
   --home-muted:#667085;
@@ -638,14 +638,14 @@ include __DIR__ . '/includes/header.php';
 
 .home-section--soft {
   background:
-    radial-gradient(circle at top right, rgba(212,175,55,.10), transparent 28%),
+    radial-gradient(circle at top right, rgba(232,40,42,.10), transparent 28%),
     linear-gradient(180deg, #FAF7F0 0%, #ffffff 100%);
 }
 
 .home-section--blue {
   background:
     radial-gradient(circle at top left, rgba(255,255,255,.08), transparent 20%),
-    linear-gradient(135deg, #060d1a 0%, #0A1628 52%, #0f2044 100%);
+    linear-gradient(135deg, #1340B0 0%, #1B4FD8 52%, #1E57E8 100%);
   color:#fff;
 }
 
@@ -701,9 +701,9 @@ include __DIR__ . '/includes/header.php';
   overflow:hidden;
   padding:34px 0 40px;
   background:
-    radial-gradient(circle at 12% 12%, rgba(212,175,55,.18), transparent 30%),
-    radial-gradient(circle at 86% 18%, rgba(212,175,55,.08), transparent 28%),
-    linear-gradient(135deg, #060d1a 0%, #0A1628 55%, #0f2044 100%);
+    radial-gradient(circle at 12% 12%, rgba(232,40,42,.18), transparent 30%),
+    radial-gradient(circle at 86% 18%, rgba(232,40,42,.08), transparent 28%),
+    linear-gradient(135deg, #1340B0 0%, #1B4FD8 55%, #1E57E8 100%);
   color:#fff;
 }
 
@@ -743,7 +743,7 @@ include __DIR__ . '/includes/header.php';
 }
 
 .home-hero__eyebrow i {
-  color:#E8CC6A;
+  color:#FF5557;
 }
 
 .home-hero__title {
@@ -797,9 +797,9 @@ include __DIR__ . '/includes/header.php';
 }
 
 .home-button {
-  background:linear-gradient(135deg, var(--home-gold) 0%, #E8CC6A 100%);
+  background:linear-gradient(135deg, var(--home-gold) 0%, #FF5557 100%);
   color:#2b1900;
-  box-shadow:0 16px 36px rgba(212,175,55,.35);
+  box-shadow:0 16px 36px rgba(232,40,42,.35);
 }
 
 .home-button--outline {
@@ -811,7 +811,7 @@ include __DIR__ . '/includes/header.php';
 .home-button--ghost {
   background:#fff4ef;
   color:var(--home-red-dark);
-  border-color:rgba(212,175,55,.12);
+  border-color:rgba(232,40,42,.12);
 }
 
 .home-button--light {
@@ -866,7 +866,7 @@ include __DIR__ . '/includes/header.php';
 }
 
 .home-hero__note i {
-  color:#E8CC6A;
+  color:#FF5557;
 }
 
 .home-spotlight {
@@ -942,7 +942,7 @@ include __DIR__ . '/includes/header.php';
 
 .home-spotlight-card__price {
   margin:0 0 16px;
-  color:#E8CC6A;
+  color:#FF5557;
   font-size:28px;
   font-weight:820;
 }
@@ -1028,8 +1028,8 @@ include __DIR__ . '/includes/header.php';
 .home-field input:focus,
 .home-field select:focus,
 .home-field textarea:focus {
-  border-color:rgba(10,22,40,.42);
-  box-shadow:0 0 0 4px rgba(10,22,40,.08);
+  border-color:rgba(27,79,216,.42);
+  box-shadow:0 0 0 4px rgba(27,79,216,.08);
 }
 
 .home-search__cta {
@@ -1049,7 +1049,7 @@ include __DIR__ . '/includes/header.php';
   padding:0 14px;
   border-radius:999px;
   background:var(--home-surface-warm);
-  border:1px solid rgba(212,175,55,.10);
+  border:1px solid rgba(232,40,42,.10);
   color:var(--home-red-dark);
   font-size:13px;
   font-weight:720;
@@ -1108,7 +1108,7 @@ include __DIR__ . '/includes/header.php';
   align-items:center;
   justify-content:center;
   border-radius:18px;
-  background:linear-gradient(135deg, rgba(10,22,40,.08), rgba(212,175,55,.12));
+  background:linear-gradient(135deg, rgba(27,79,216,.08), rgba(232,40,42,.12));
   color:var(--home-blue);
   font-size:22px;
   margin-bottom:14px;
@@ -1329,8 +1329,8 @@ include __DIR__ . '/includes/header.php';
   min-width:24px;
   margin-top:2px;
   border-radius:999px;
-  background:linear-gradient(135deg, rgba(10,22,40,.12), rgba(212,175,55,.12));
-  box-shadow:inset 0 0 0 6px rgba(10,22,40,.14);
+  background:linear-gradient(135deg, rgba(27,79,216,.12), rgba(232,40,42,.12));
+  box-shadow:inset 0 0 0 6px rgba(27,79,216,.14);
 }
 
 .home-fund-card__tag {
@@ -1372,7 +1372,7 @@ include __DIR__ . '/includes/header.php';
   color:#fff;
   font-size:22px;
   font-weight:820;
-  box-shadow:0 14px 28px rgba(10,22,40,.20);
+  box-shadow:0 14px 28px rgba(27,79,216,.20);
   margin-bottom:16px;
 }
 

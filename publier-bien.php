@@ -165,7 +165,7 @@ padding:40px 20px;
 font-size:32px;
 font-weight:900;
 margin-bottom:10px;
-color:#0f2044;
+color:#1E57E8;
 }
 
 .publish-desc{
@@ -214,7 +214,7 @@ resize:vertical;
 
 .publish-btn{
 margin-top:25px;
-background:#0A1628;
+background:#1B4FD8;
 color:#fff;
 border:none;
 padding:14px 26px;
@@ -225,7 +225,7 @@ font-size:16px;
 }
 
 .publish-btn:hover{
-background:#0f2044;
+background:#1E57E8;
 }
 
 .publish-success{

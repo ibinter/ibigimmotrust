@@ -187,10 +187,10 @@ include __DIR__ . '/includes/header.php';
 
 <style>
 :root {
-  --btp-blue:#0A1628;
-  --btp-blue-dark:#060d1a;
-  --btp-red:#D4AF37;
-  --btp-gold:#E8CC6A;
+  --btp-blue:#1B4FD8;
+  --btp-blue-dark:#1340B0;
+  --btp-red:#E8282A;
+  --btp-gold:#FF5557;
   --btp-ink:#101828;
   --btp-ink-soft:#1d2939;
   --btp-muted:#667085;
@@ -223,14 +223,14 @@ include __DIR__ . '/includes/header.php';
 
 .btp-section--soft {
   background:
-    radial-gradient(circle at top right, rgba(212,175,55,.12), transparent 22%),
+    radial-gradient(circle at top right, rgba(232,40,42,.12), transparent 22%),
     linear-gradient(180deg, #FAF7F0 0%, #ffffff 100%);
 }
 
 .btp-section--cta {
   background:
     radial-gradient(circle at top left, rgba(255,255,255,.08), transparent 20%),
-    linear-gradient(135deg, #060d1a 0%, #0A1628 48%, #D4AF37 100%);
+    linear-gradient(135deg, #1340B0 0%, #1B4FD8 48%, #E8282A 100%);
   color:#fff;
 }
 
@@ -272,9 +272,9 @@ include __DIR__ . '/includes/header.php';
   overflow:hidden;
   padding:34px 0 44px;
   background:
-    radial-gradient(circle at 12% 12%, rgba(212,175,55,.18), transparent 30%),
-    radial-gradient(circle at 88% 16%, rgba(212,175,55,.16), transparent 24%),
-    linear-gradient(135deg, #060d1a 0%, #0A1628 50%, #D4AF37 100%);
+    radial-gradient(circle at 12% 12%, rgba(232,40,42,.18), transparent 30%),
+    radial-gradient(circle at 88% 16%, rgba(232,40,42,.16), transparent 24%),
+    linear-gradient(135deg, #1340B0 0%, #1B4FD8 50%, #E8282A 100%);
   color:#fff;
 }
 
@@ -313,7 +313,7 @@ include __DIR__ . '/includes/header.php';
 }
 
 .btp-hero-pill i {
-  color:#E8CC6A;
+  color:#FF5557;
 }
 
 .btp-hero-title {
@@ -367,9 +367,9 @@ include __DIR__ . '/includes/header.php';
 }
 
 .btp-button {
-  background:linear-gradient(135deg, var(--btp-gold) 0%, #E8CC6A 100%);
+  background:linear-gradient(135deg, var(--btp-gold) 0%, #FF5557 100%);
   color:#2b1900;
-  box-shadow:0 16px 36px rgba(212,175,55,.26);
+  box-shadow:0 16px 36px rgba(232,40,42,.26);
 }
 
 .btp-button--outline {
@@ -381,7 +381,7 @@ include __DIR__ . '/includes/header.php';
 .btp-button--ghost {
   background:#fff4ef;
   color:var(--btp-red);
-  border-color:rgba(212,175,55,.10);
+  border-color:rgba(232,40,42,.10);
 }
 
 .btp-button--light {
@@ -578,7 +578,7 @@ include __DIR__ . '/includes/header.php';
   align-items:center;
   justify-content:center;
   border-radius:18px;
-  background:linear-gradient(135deg, rgba(10,22,40,.08), rgba(212,175,55,.12));
+  background:linear-gradient(135deg, rgba(27,79,216,.08), rgba(232,40,42,.12));
   color:var(--btp-blue);
   font-size:22px;
   margin-bottom:14px;
@@ -611,7 +611,7 @@ include __DIR__ . '/includes/header.php';
   color:#fff;
   font-size:22px;
   font-weight:820;
-  box-shadow:0 14px 28px rgba(10,22,40,.20);
+  box-shadow:0 14px 28px rgba(27,79,216,.20);
   margin-bottom:16px;
 }
 
@@ -660,8 +660,8 @@ include __DIR__ . '/includes/header.php';
   min-width:24px;
   margin-top:2px;
   border-radius:999px;
-  background:linear-gradient(135deg, rgba(10,22,40,.12), rgba(212,175,55,.12));
-  box-shadow:inset 0 0 0 6px rgba(10,22,40,.14);
+  background:linear-gradient(135deg, rgba(27,79,216,.12), rgba(232,40,42,.12));
+  box-shadow:inset 0 0 0 6px rgba(27,79,216,.14);
 }
 
 .btp-faq-grid {

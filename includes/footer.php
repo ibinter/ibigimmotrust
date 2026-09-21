@@ -120,7 +120,7 @@
   </div>
 
   <!-- BANDE DE CERTIFICATIONS -->
-  <div style="border-top:1px solid rgba(212,175,55,0.08);border-bottom:1px solid rgba(212,175,55,0.08);padding:16px 0;background:rgba(0,0,0,0.15);">
+  <div style="border-top:1px solid rgba(232,40,42,0.08);border-bottom:1px solid rgba(232,40,42,0.08);padding:16px 0;background:rgba(0,0,0,0.15);">
     <div class="container" style="display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:28px;">
       <div style="display:flex;align-items:center;gap:8px;font-size:12px;color:rgba(255,255,255,0.4);">
         <i class="fa-solid fa-shield-halved" style="color:var(--gold);"></i>
@@ -199,8 +199,8 @@
 .whatsapp-float .fab { font-size: 20px; }
 
 .footer-premium {
-  background: var(--navy-deep, #060d1a);
-  border-top: 1px solid rgba(212,175,55,0.12);
+  background: var(--navy-deep, #1340B0);
+  border-top: 1px solid rgba(232,40,42,0.12);
 }
 
 .footer-main { padding: 70px 0 50px; }
@@ -232,7 +232,7 @@
 .footer-social a {
   width: 36px; height: 36px;
   background: rgba(255,255,255,0.06);
-  border: 1px solid rgba(212,175,55,0.2);
+  border: 1px solid rgba(232,40,42,0.2);
   border-radius: 10px;
   display: flex; align-items: center; justify-content: center;
   color: rgba(255,255,255,0.55);
@@ -242,16 +242,16 @@
 }
 
 .footer-social a:hover {
-  background: var(--gold, #D4AF37);
-  border-color: var(--gold, #D4AF37);
-  color: var(--navy, #0A1628);
+  background: var(--gold, #E8282A);
+  border-color: var(--gold, #E8282A);
+  color: var(--navy, #1B4FD8);
   transform: translateY(-2px);
 }
 
 .footer-col-title {
   font-size: 11px;
   font-weight: 800;
-  color: var(--gold, #D4AF37);
+  color: var(--gold, #E8282A);
   letter-spacing: 0.1em;
   text-transform: uppercase;
   margin-bottom: 18px;
@@ -264,7 +264,7 @@
   content: '';
   flex: 1;
   height: 1px;
-  background: rgba(212,175,55,0.15);
+  background: rgba(232,40,42,0.15);
 }
 
 .footer-links {
@@ -285,7 +285,7 @@
 }
 
 .footer-links a:hover {
-  color: var(--gold, #D4AF37);
+  color: var(--gold, #E8282A);
   padding-left: 4px;
 }
 
@@ -298,10 +298,10 @@
 
 .footer-contact-icon {
   width: 32px; height: 32px;
-  background: rgba(212,175,55,0.1);
+  background: rgba(232,40,42,0.1);
   border-radius: 8px;
   display: flex; align-items: center; justify-content: center;
-  color: var(--gold, #D4AF37);
+  color: var(--gold, #E8282A);
   font-size: 13px;
   flex-shrink: 0;
 }
@@ -340,7 +340,7 @@
   color: rgba(255,255,255,0.3);
 }
 
-.footer-copyright span { color: var(--gold, #D4AF37); font-weight: 700; }
+.footer-copyright span { color: var(--gold, #E8282A); font-weight: 700; }
 
 .footer-legal-links {
   display: flex;
@@ -355,7 +355,7 @@
   transition: color 0.25s;
 }
 
-.footer-legal-links a:hover { color: var(--gold, #D4AF37); }
+.footer-legal-links a:hover { color: var(--gold, #E8282A); }
 
 @media (max-width: 1024px) {
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 40px; }

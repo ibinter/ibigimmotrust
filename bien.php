@@ -1048,10 +1048,10 @@ include __DIR__ . '/includes/header.php';
 
 <style>
 :root {
-    --bien-blue:#0A1628;
+    --bien-blue:#1B4FD8;
     --bien-blue-dark: #0d2c6d;
     --bien-blue-soft: #eef4ff;
-    --bien-red:#D4AF37;
+    --bien-red:#E8282A;
     --bien-green: #16a34a;
     --bien-gold: #d3a42f;
     --bien-text: #1f2937;

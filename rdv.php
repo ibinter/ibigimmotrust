@@ -28,7 +28,7 @@ include __DIR__ . '/includes/header.php';
     font-size: 30px;
     font-weight: 800;
     text-align: center;
-    color: #0A1628;
+    color: #fff;
     margin-bottom: 10px;
 }
 .rdv-hero-subtitle {
@@ -61,7 +61,7 @@ include __DIR__ . '/includes/header.php';
     font-weight: 700;
     margin-bottom: 6px;
     text-align: center;
-    color: #0f2044;
+    color: #1E57E8;
 }
 .rdv-form-subtitle {
     font-size: 14px;
@@ -115,8 +115,8 @@ include __DIR__ . '/includes/header.php';
 .rdv-field input:focus,
 .rdv-field select:focus,
 .rdv-field textarea:focus {
-    border-color: #0A1628;
-    box-shadow: 0 0 0 2px rgba(10,22,40,0.15);
+    border-color: #fff;
+    box-shadow: 0 0 0 2px rgba(27,79,216,0.15);
     background: #ffffff;
     outline: none;
 }
@@ -131,7 +131,7 @@ include __DIR__ . '/includes/header.php';
     color: #1f2933;
 }
 .rdv-bien-box strong {
-    color: #0A1628;
+    color: #fff;
 }
 
 /* RADIO / SELECT INLINE */
@@ -168,7 +168,7 @@ include __DIR__ . '/includes/header.php';
     padding: 13px 18px;
     border-radius: 999px;
     border: none;
-    background: #0A1628;
+    background: #1B4FD8;
     color: #ffffff;
     font-size: 15px;
     font-weight: 700;
@@ -176,7 +176,7 @@ include __DIR__ . '/includes/header.php';
     transition: 0.2s;
 }
 .rdv-submit button:hover {
-    background: #060d1a;
+    background: #1340B0;
 }
 
 /* ALERTES */
@@ -192,7 +192,7 @@ include __DIR__ . '/includes/header.php';
 .rdv-alert-error {
     background: #fef2f2;
     border: 1px solid #fca5a5;
-    color: #A68920;
+    color: #C01A1C;
     padding: 10px 12px;
     border-radius: 10px;
     font-size: 14px;

@@ -10,7 +10,7 @@ require_once __DIR__ . "/includes/header.php";
 <style>
 /* ===== HERO SERVICES ===== */
 .svc-hero {
-  background: linear-gradient(135deg, #060d1a 0%, #0A1628 60%, #0f2044 100%);
+  background: linear-gradient(135deg, #1340B0 0%, #1B4FD8 60%, #1E57E8 100%);
   padding: 80px 0 60px;
   position: relative;
   overflow: hidden;
@@ -21,17 +21,17 @@ require_once __DIR__ . "/includes/header.php";
   top: -100px; right: -100px;
   width: 450px; height: 450px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(212,175,55,0.07) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(232,40,42,0.07) 0%, transparent 70%);
 }
 .svc-hero .kicker {
   font-size: 11px; font-weight: 800; letter-spacing: 0.15em;
-  text-transform: uppercase; color: #D4AF37; margin-bottom: 16px;
+  text-transform: uppercase; color: #E8282A; margin-bottom: 16px;
 }
 .svc-hero h1 {
   font-size: clamp(26px, 3.5vw, 46px); font-weight: 900;
   color: #fff; margin: 0 0 16px; letter-spacing: -0.02em; line-height: 1.15;
 }
-.svc-hero h1 span { color: #D4AF37; }
+.svc-hero h1 span { color: #E8282A; }
 .svc-hero .desc {
   font-size: 16px; color: rgba(255,255,255,0.65);
   max-width: 620px; line-height: 1.75; margin: 0;
@@ -48,45 +48,45 @@ require_once __DIR__ . "/includes/header.php";
   background: #fff;
   border-radius: 18px;
   padding: 34px 28px;
-  box-shadow: 0 8px 32px rgba(10,22,40,0.08);
-  border: 1px solid rgba(10,22,40,0.06);
-  border-top: 3px solid #D4AF37;
+  box-shadow: 0 8px 32px rgba(27,79,216,0.08);
+  border: 1px solid rgba(27,79,216,0.06);
+  border-top: 3px solid #E8282A;
   display: flex; flex-direction: column; justify-content: space-between;
   transition: all 0.3s ease;
 }
-.svc-card:hover { transform: translateY(-5px); box-shadow: 0 20px 50px rgba(10,22,40,0.13); }
+.svc-card:hover { transform: translateY(-5px); box-shadow: 0 20px 50px rgba(27,79,216,0.13); }
 .svc-icon {
   width: 52px; height: 52px;
-  background: linear-gradient(135deg, #D4AF37, #A68920);
+  background: linear-gradient(135deg, #E8282A, #C01A1C);
   border-radius: 14px;
   display: flex; align-items: center; justify-content: center;
-  font-size: 20px; color: #0A1628;
+  font-size: 20px; color: #fff;
   margin-bottom: 20px;
 }
-.svc-card h3 { font-size: 19px; font-weight: 800; color: #0A1628; margin-bottom: 10px; }
+.svc-card h3 { font-size: 19px; font-weight: 800; color: #fff; margin-bottom: 10px; }
 .svc-card p { font-size: 14px; color: #4B5563; line-height: 1.7; margin-bottom: 22px; flex: 1; }
 .svc-actions { display: flex; gap: 10px; flex-wrap: wrap; }
 .svc-btn-primary {
   display: inline-flex; align-items: center; gap: 6px;
   padding: 10px 18px; border-radius: 999px;
-  background: linear-gradient(135deg, #D4AF37, #A68920);
-  color: #0A1628; font-size: 13px; font-weight: 800;
+  background: linear-gradient(135deg, #E8282A, #C01A1C);
+  color: #fff; font-size: 13px; font-weight: 800;
   text-decoration: none; transition: all 0.3s ease;
 }
-.svc-btn-primary:hover { box-shadow: 0 6px 20px rgba(212,175,55,0.4); transform: translateY(-1px); }
+.svc-btn-primary:hover { box-shadow: 0 6px 20px rgba(232,40,42,0.4); transform: translateY(-1px); }
 .svc-btn-outline {
   display: inline-flex; align-items: center; gap: 6px;
   padding: 10px 18px; border-radius: 999px;
-  border: 1.5px solid #0A1628; color: #0A1628;
+  border: 1.5px solid #1B4FD8; color: #fff;
   font-size: 13px; font-weight: 800; text-decoration: none; transition: all 0.3s ease;
   background: transparent;
 }
-.svc-btn-outline:hover { background: #0A1628; color: #fff; }
+.svc-btn-outline:hover { background: #1B4FD8; color: #fff; }
 
 /* ===== SECTION ENGAGEMENT ===== */
 .svc-engagement {
   padding: 70px 0;
-  background: linear-gradient(135deg, #060d1a, #0A1628);
+  background: linear-gradient(135deg, #1340B0, #1B4FD8);
   text-align: center;
 }
 .svc-engagement h2 { font-size: clamp(22px, 3vw, 34px); font-weight: 900; color: #fff; margin-bottom: 14px; }
@@ -95,18 +95,18 @@ require_once __DIR__ . "/includes/header.php";
 .svc-cta-gold {
   display: inline-flex; align-items: center; gap: 8px;
   padding: 14px 28px; border-radius: 999px;
-  background: linear-gradient(135deg, #D4AF37, #A68920);
-  color: #0A1628; font-size: 14px; font-weight: 800; text-decoration: none;
+  background: linear-gradient(135deg, #E8282A, #C01A1C);
+  color: #fff; font-size: 14px; font-weight: 800; text-decoration: none;
   transition: all 0.3s ease;
 }
-.svc-cta-gold:hover { box-shadow: 0 8px 25px rgba(212,175,55,0.45); transform: translateY(-2px); }
+.svc-cta-gold:hover { box-shadow: 0 8px 25px rgba(232,40,42,0.45); transform: translateY(-2px); }
 .svc-cta-white {
   display: inline-flex; align-items: center; gap: 8px;
   padding: 14px 28px; border-radius: 999px;
   border: 1.5px solid rgba(255,255,255,0.3); color: #fff;
   font-size: 14px; font-weight: 800; text-decoration: none; transition: all 0.3s ease;
 }
-.svc-cta-white:hover { background: rgba(255,255,255,0.1); border-color: #D4AF37; color: #D4AF37; }
+.svc-cta-white:hover { background: rgba(255,255,255,0.1); border-color: #E8282A; color: #E8282A; }
 </style>
 
 <!-- HERO -->

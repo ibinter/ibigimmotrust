@@ -809,10 +809,10 @@ $paginationItems = biens_pagination_items($page, $totalPages);
 
 <style>
 .biens-page {
-  --biens-blue: #0A1628;
+  --biens-blue: #1B4FD8;
   --biens-blue-dark: #041c4b;
-  --biens-red:#D4AF37;
-  --biens-gold: #d4af37;
+  --biens-red:#E8282A;
+  --biens-gold: #E8282A;
   --biens-green: #25d366;
   --biens-text: #0f172a;
   --biens-muted: #64748b;
@@ -978,7 +978,7 @@ $paginationItems = biens_pagination_items($page, $totalPages);
 
 .biens-button--light {
   color: #081225;
-  background: linear-gradient(135deg, #f8d978, #d4af37);
+  background: linear-gradient(135deg, #f8d978, #E8282A);
   box-shadow: 0 12px 22px rgba(212, 175, 55, 0.24);
 }
 
@@ -1099,12 +1099,12 @@ $paginationItems = biens_pagination_items($page, $totalPages);
 
 .biens-badge--gold {
   color: #17120a;
-  background: linear-gradient(135deg, #f3d573, #d4af37);
+  background: linear-gradient(135deg, #f3d573, #E8282A);
 }
 
 .biens-badge--blue {
   color: #ffffff;
-  background: linear-gradient(135deg, #2563eb, #0A1628);
+  background: linear-gradient(135deg, #2563eb, #1B4FD8);
 }
 
 .biens-badge--green {

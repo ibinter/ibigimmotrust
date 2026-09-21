@@ -12,7 +12,7 @@ include __DIR__ . '/includes/header.php';
    LOYER GARANTI – IBIG IMMO TRUST
 ========================================== */
 .lg-hero {
-  background: linear-gradient(135deg, #060d1a 0%, #0A1628 55%, #0f2044 100%);
+  background: linear-gradient(135deg, #1340B0 0%, #1B4FD8 55%, #1E57E8 100%);
   color: #fff;
   padding: 80px 20px;
   text-align: center;
@@ -23,12 +23,12 @@ include __DIR__ . '/includes/header.php';
   gap: 8px;
   font-size: 11px;
   font-weight: 800;
-  color: #D4AF37;
+  color: #E8282A;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   margin-bottom: 18px;
-  background: rgba(212,175,55,0.1);
-  border: 1px solid rgba(212,175,55,0.25);
+  background: rgba(232,40,42,0.1);
+  border: 1px solid rgba(232,40,42,0.25);
   padding: 6px 16px;
   border-radius: 999px;
 }
@@ -39,7 +39,7 @@ include __DIR__ . '/includes/header.php';
   line-height: 1.2;
   color: #fff;
 }
-.lg-hero h1 span { color: #D4AF37; }
+.lg-hero h1 span { color: #E8282A; }
 .lg-hero p {
   font-size: 17px;
   max-width: 700px;
@@ -58,16 +58,16 @@ include __DIR__ . '/includes/header.php';
   align-items: center;
   gap: 8px;
   padding: 13px 26px;
-  background: linear-gradient(135deg, #D4AF37, #A68920);
-  color: #0A1628;
+  background: linear-gradient(135deg, #E8282A, #C01A1C);
+  color: #fff;
   border-radius: 999px;
   font-weight: 800;
   font-size: 14px;
   text-decoration: none;
-  box-shadow: 0 6px 20px rgba(212,175,55,0.35);
+  box-shadow: 0 6px 20px rgba(232,40,42,0.35);
   transition: all 0.25s ease;
 }
-.lg-btn-gold:hover { box-shadow: 0 10px 30px rgba(212,175,55,0.55); transform: translateY(-2px); }
+.lg-btn-gold:hover { box-shadow: 0 10px 30px rgba(232,40,42,0.55); transform: translateY(-2px); }
 .lg-btn-outline {
   display: inline-flex;
   align-items: center;
@@ -99,12 +99,12 @@ include __DIR__ . '/includes/header.php';
   padding: 7px 14px;
   border-radius: 999px;
   background: rgba(255,255,255,0.08);
-  border: 1px solid rgba(212,175,55,0.2);
+  border: 1px solid rgba(232,40,42,0.2);
   font-size: 12.5px;
   font-weight: 600;
   color: rgba(255,255,255,0.8);
 }
-.lg-badge i { color: #D4AF37; }
+.lg-badge i { color: #E8282A; }
 
 /* Sections */
 .lg-section {
@@ -123,11 +123,11 @@ include __DIR__ . '/includes/header.php';
 .lg-section-head h2 {
   font-size: clamp(22px, 2.5vw, 34px);
   font-weight: 900;
-  color: #0A1628;
+  color: #fff;
   margin-bottom: 14px;
   line-height: 1.25;
 }
-.lg-section-head h2 span { color: #D4AF37; }
+.lg-section-head h2 span { color: #E8282A; }
 .lg-section-head p {
   font-size: 16px;
   color: #374151;
@@ -147,7 +147,7 @@ include __DIR__ . '/includes/header.php';
   border-radius: 16px;
   padding: 28px;
   box-shadow: 0 8px 28px rgba(0,0,0,0.08);
-  border-top: 3px solid #D4AF37;
+  border-top: 3px solid #E8282A;
   transition: all 0.25s ease;
 }
 .lg-section--soft .lg-card { background: #fff; }
@@ -156,17 +156,17 @@ include __DIR__ . '/includes/header.php';
   width: 46px;
   height: 46px;
   border-radius: 12px;
-  background: rgba(212,175,55,0.1);
+  background: rgba(232,40,42,0.1);
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 14px;
 }
-.lg-card-icon i { color: #D4AF37; font-size: 18px; }
+.lg-card-icon i { color: #E8282A; font-size: 18px; }
 .lg-card h3 {
   font-size: 17px;
   font-weight: 900;
-  color: #0A1628;
+  color: #fff;
   margin-bottom: 10px;
   line-height: 1.3;
 }
@@ -179,7 +179,7 @@ include __DIR__ . '/includes/header.php';
 
 /* Stats bar */
 .lg-stats {
-  background: linear-gradient(135deg, #060d1a 0%, #0A1628 100%);
+  background: linear-gradient(135deg, #1340B0 0%, #1B4FD8 100%);
   padding: 52px 20px;
 }
 .lg-stats-grid {
@@ -194,7 +194,7 @@ include __DIR__ . '/includes/header.php';
   display: block;
   font-size: 40px;
   font-weight: 900;
-  color: #D4AF37;
+  color: #E8282A;
   line-height: 1;
   margin-bottom: 8px;
 }
@@ -207,19 +207,19 @@ include __DIR__ . '/includes/header.php';
 
 /* CTA bottom */
 .lg-cta {
-  background: linear-gradient(135deg, #D4AF37 0%, #A68920 100%);
+  background: linear-gradient(135deg, #E8282A 0%, #C01A1C 100%);
   padding: 64px 20px;
   text-align: center;
 }
 .lg-cta h2 {
   font-size: clamp(22px, 2.5vw, 32px);
   font-weight: 900;
-  color: #0A1628;
+  color: #fff;
   margin-bottom: 14px;
 }
 .lg-cta p {
   font-size: 16px;
-  color: rgba(10,22,40,0.75);
+  color: rgba(27,79,216,0.75);
   margin-bottom: 30px;
   max-width: 600px;
   margin-left: auto;
@@ -237,7 +237,7 @@ include __DIR__ . '/includes/header.php';
   align-items: center;
   gap: 8px;
   padding: 14px 28px;
-  background: #0A1628;
+  background: #1B4FD8;
   color: #fff;
   border-radius: 999px;
   font-weight: 800;
@@ -245,14 +245,14 @@ include __DIR__ . '/includes/header.php';
   text-decoration: none;
   transition: all 0.25s ease;
 }
-.lg-cta-btn-navy:hover { background: #060d1a; transform: translateY(-2px); }
+.lg-cta-btn-navy:hover { background: #1340B0; transform: translateY(-2px); }
 .lg-cta-btn-white {
   display: inline-flex;
   align-items: center;
   gap: 8px;
   padding: 14px 28px;
   background: #fff;
-  color: #0A1628;
+  color: #fff;
   border-radius: 999px;
   font-weight: 700;
   font-size: 14px;
@@ -268,7 +268,7 @@ include __DIR__ . '/includes/header.php';
 <section class="lg-hero">
   <span class="lg-kicker"><i class="fa-solid fa-shield-halved"></i> Gestion locative premium</span>
   <h1>Le loyer garanti<br><span>IBIG IMMO TRUST</span></h1>
-  <p>Recevez votre loyer chaque mois, au plus tard le <strong style="color:#D4AF37;">10 du mois</strong>, indépendamment des retards ou impayés de votre locataire — en Côte d'Ivoire et pour la diaspora.</p>
+  <p>Recevez votre loyer chaque mois, au plus tard le <strong style="color:#E8282A;">10 du mois</strong>, indépendamment des retards ou impayés de votre locataire — en Côte d'Ivoire et pour la diaspora.</p>
   <div class="lg-hero-btns">
     <a href="contact.php" class="lg-btn-gold"><i class="fa-solid fa-headset"></i> Parler à un conseiller</a>
     <a href="rdv.php" class="lg-btn-outline"><i class="fa-regular fa-calendar-check"></i> Prendre RDV</a>

@@ -19,12 +19,12 @@ include __DIR__ . '/includes/header.php';
 
 <style>
 :root{
-  --immo-red:#D4AF37;
-  --immo-red-dark:#A68920;
-  --immo-orange:#E8CC6A;
-  --immo-gold:#E8CC6A;
-  --immo-dark:#0A1628;
-  --immo-dark-2:#0f2044;
+  --immo-red:#E8282A;
+  --immo-red-dark:#C01A1C;
+  --immo-orange:#FF5557;
+  --immo-gold:#FF5557;
+  --immo-dark:#1B4FD8;
+  --immo-dark-2:#1E57E8;
   --immo-text:#334155;
   --immo-muted:#64748b;
   --immo-line:#e2e8f0;
@@ -34,7 +34,7 @@ include __DIR__ . '/includes/header.php';
   --shadow-xs:0 4px 16px rgba(15,23,42,.06);
   --shadow-sm:0 14px 34px rgba(15,23,42,.08);
   --shadow-md:0 24px 60px rgba(15,23,42,.12);
-  --shadow-lg:0 30px 80px rgba(212,175,55,.15);
+  --shadow-lg:0 30px 80px rgba(232,40,42,.15);
   --radius-sm:16px;
   --radius-md:22px;
   --radius-lg:30px;
@@ -66,7 +66,7 @@ button,input,select,textarea{font:inherit}
 
 .section-alt{
   background:
-    radial-gradient(circle at top right, rgba(212,175,55,.08), transparent 28%),
+    radial-gradient(circle at top right, rgba(232,40,42,.08), transparent 28%),
     linear-gradient(180deg,#FAF7F0 0%,#ffffff 100%);
 }
 
@@ -113,11 +113,11 @@ button,input,select,textarea{font:inherit}
 .btn-primary{
   background:linear-gradient(135deg,var(--immo-red) 0%, var(--immo-gold) 100%);
   color:#2f1b00;
-  box-shadow:0 14px 34px rgba(212,175,55,.28);
+  box-shadow:0 14px 34px rgba(232,40,42,.28);
 }
 .btn-primary:hover{
   transform:translateY(-2px);
-  box-shadow:0 18px 40px rgba(212,175,55,.35);
+  box-shadow:0 18px 40px rgba(232,40,42,.35);
 }
 
 .btn-secondary{
@@ -133,7 +133,7 @@ button,input,select,textarea{font:inherit}
 .btn-light{
   background:#fff;
   color:var(--immo-red);
-  border:1px solid rgba(212,175,55,.10);
+  border:1px solid rgba(232,40,42,.10);
 }
 .btn-light:hover{
   transform:translateY(-2px);
@@ -161,9 +161,9 @@ button,input,select,textarea{font:inherit}
   overflow:hidden;
   padding:48px 0 90px;
   background:
-    radial-gradient(circle at 12% 10%, rgba(212,175,55,.15), transparent 25%),
-    radial-gradient(circle at 90% 15%, rgba(212,175,55,.08), transparent 25%),
-    linear-gradient(135deg, #060d1a 0%, #0A1628 50%, #0f2044 100%);
+    radial-gradient(circle at 12% 10%, rgba(232,40,42,.15), transparent 25%),
+    radial-gradient(circle at 90% 15%, rgba(232,40,42,.08), transparent 25%),
+    linear-gradient(135deg, #1340B0 0%, #1B4FD8 50%, #1E57E8 100%);
   color:#fff;
 }
 
@@ -334,7 +334,7 @@ button,input,select,textarea{font:inherit}
   display:flex;
   align-items:center;
   justify-content:center;
-  background:linear-gradient(135deg, rgba(212,175,55,.08), rgba(212,175,55,.12));
+  background:linear-gradient(135deg, rgba(232,40,42,.08), rgba(232,40,42,.12));
   color:var(--immo-red);
   font-size:24px;
 }
@@ -425,7 +425,7 @@ button,input,select,textarea{font:inherit}
   align-items:center;
   justify-content:center;
   border-radius:50%;
-  background:rgba(212,175,55,.08);
+  background:rgba(232,40,42,.08);
   color:var(--immo-red);
   font-size:14px;
   font-weight:900;
@@ -461,7 +461,7 @@ button,input,select,textarea{font:inherit}
   display:flex;
   align-items:center;
   justify-content:center;
-  background:linear-gradient(135deg, rgba(212,175,55,.08), rgba(212,175,55,.12));
+  background:linear-gradient(135deg, rgba(232,40,42,.08), rgba(232,40,42,.12));
   color:var(--immo-red);
   font-size:24px;
   margin-bottom:14px;
@@ -519,7 +519,7 @@ button,input,select,textarea{font:inherit}
   font-size:22px;
   font-weight:900;
   margin-bottom:16px;
-  box-shadow:0 12px 24px rgba(212,175,55,.20);
+  box-shadow:0 12px 24px rgba(232,40,42,.20);
 }
 
 .step h3{
@@ -561,7 +561,7 @@ button,input,select,textarea{font:inherit}
   border-radius:999px;
   background:#fff4ef;
   color:var(--immo-red);
-  border:1px solid rgba(212,175,55,.08);
+  border:1px solid rgba(232,40,42,.08);
   font-size:12px;
   font-weight:900;
   margin-bottom:12px;
@@ -586,8 +586,8 @@ button,input,select,textarea{font:inherit}
   min-width:250px;
   padding:18px;
   border-radius:20px;
-  background:linear-gradient(135deg, rgba(212,175,55,.04), rgba(212,175,55,.08));
-  border:1px solid rgba(212,175,55,.08);
+  background:linear-gradient(135deg, rgba(232,40,42,.04), rgba(232,40,42,.08));
+  border:1px solid rgba(232,40,42,.08);
 }
 
 .offer-note strong{
@@ -651,8 +651,8 @@ button,input,select,textarea{font:inherit}
   overflow:hidden;
   padding:90px 0;
   background:
-    radial-gradient(circle at left center, rgba(212,175,55,.12), transparent 28%),
-    linear-gradient(135deg,#060d1a 0%,#0A1628 50%,#0f2044 100%);
+    radial-gradient(circle at left center, rgba(232,40,42,.12), transparent 28%),
+    linear-gradient(135deg,#1340B0 0%,#1B4FD8 50%,#1E57E8 100%);
   color:#fff;
 }
 
@@ -781,7 +781,7 @@ button,input,select,textarea{font:inherit}
 }
 
 .hero-diaspora{
-  background:linear-gradient(135deg,#D4AF37,#A68920);
+  background:linear-gradient(135deg,#E8282A,#C01A1C);
   color:white;
   padding:110px 0;
 }

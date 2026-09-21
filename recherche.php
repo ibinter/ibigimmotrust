@@ -83,7 +83,7 @@ padding:40px 20px;
 font-size:36px;
 font-weight:900;
 margin-bottom:30px;
-color:#0f2044;
+color:#1E57E8;
 
 }
 
@@ -159,7 +159,7 @@ top:12px;
 
 left:12px;
 
-background:#D4AF37;
+background:#E8282A;
 
 color:#fff;
 
@@ -219,7 +219,7 @@ margin-bottom:14px;
 
 display:inline-block;
 
-background:#D4AF37;
+background:#E8282A;
 
 color:#fff;
 

@@ -10,65 +10,65 @@ include __DIR__ . '/includes/header.php';
 <style>
 /* ===== HERO FAQ ===== */
 .faq-hero {
-  background: linear-gradient(135deg, #060d1a 0%, #0A1628 60%, #0f2044 100%);
+  background: linear-gradient(135deg, #1340B0 0%, #1B4FD8 60%, #1E57E8 100%);
   padding: 70px 0 55px;
   position: relative; overflow: hidden;
 }
 .faq-hero::before {
   content:''; position:absolute; top:-80px; right:-80px;
   width:380px; height:380px; border-radius:50%;
-  background:radial-gradient(circle,rgba(212,175,55,0.07) 0%,transparent 70%);
+  background:radial-gradient(circle,rgba(232,40,42,0.07) 0%,transparent 70%);
 }
 .faq-hero .kicker {
   font-size:11px; font-weight:800; letter-spacing:0.15em;
-  text-transform:uppercase; color:#D4AF37; margin-bottom:14px;
+  text-transform:uppercase; color:#E8282A; margin-bottom:14px;
 }
 .faq-hero h1 {
   font-size: clamp(24px, 3.2vw, 42px); font-weight:900;
   color:#fff; margin:0 0 14px; letter-spacing:-0.02em; line-height:1.2;
 }
-.faq-hero h1 span { color:#D4AF37; }
+.faq-hero h1 span { color:#E8282A; }
 .faq-hero .desc { font-size:16px; color:rgba(255,255,255,0.65); max-width:620px; line-height:1.75; }
 
 /* ===== ACCORDION FAQ ===== */
 .faq-section { padding: 70px 0; background: #FAF7F0; }
 .faq-category-title {
   font-size: 11px; font-weight: 800; letter-spacing: 0.12em;
-  text-transform: uppercase; color: #A68920;
+  text-transform: uppercase; color: #C01A1C;
   margin: 48px 0 20px; display: flex; align-items: center; gap: 12px;
 }
 .faq-category-title:first-of-type { margin-top: 0; }
-.faq-category-title::after { content:''; flex:1; height:1px; background:rgba(212,175,55,0.2); }
+.faq-category-title::after { content:''; flex:1; height:1px; background:rgba(232,40,42,0.2); }
 
 .faq-item {
   background: #fff;
   border-radius: 14px;
   margin-bottom: 10px;
-  border: 1px solid rgba(10,22,40,0.06);
+  border: 1px solid rgba(27,79,216,0.06);
   overflow: hidden;
   transition: box-shadow 0.3s ease;
 }
-.faq-item:hover { box-shadow: 0 6px 24px rgba(10,22,40,0.09); }
+.faq-item:hover { box-shadow: 0 6px 24px rgba(27,79,216,0.09); }
 .faq-question {
   display: flex; justify-content: space-between; align-items: center;
   padding: 20px 24px; cursor: pointer; gap: 16px;
-  font-size: 15px; font-weight: 700; color: #0A1628;
+  font-size: 15px; font-weight: 700; color: #fff;
   user-select: none;
 }
-.faq-question:hover { color: #A68920; }
+.faq-question:hover { color: #C01A1C; }
 .faq-question .faq-icon {
   width: 28px; height: 28px; flex-shrink: 0;
-  background: rgba(212,175,55,0.1); border-radius: 50%;
+  background: rgba(232,40,42,0.1); border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
-  color: #A68920; font-size: 12px;
+  color: #C01A1C; font-size: 12px;
   transition: all 0.3s ease;
 }
-.faq-item.open .faq-icon { background: #D4AF37; color: #0A1628; transform: rotate(45deg); }
+.faq-item.open .faq-icon { background: #E8282A; color: #fff; transform: rotate(45deg); }
 .faq-answer {
   display: none;
   padding: 0 24px 20px;
   font-size: 14px; color: #4B5563; line-height: 1.75;
-  border-top: 1px solid rgba(10,22,40,0.05);
+  border-top: 1px solid rgba(27,79,216,0.05);
 }
 .faq-answer p { margin: 14px 0 0; }
 .faq-item.open .faq-answer { display: block; }
@@ -76,7 +76,7 @@ include __DIR__ . '/includes/header.php';
 /* ===== CTA ===== */
 .faq-cta {
   padding: 60px 0;
-  background: linear-gradient(135deg, #060d1a, #0A1628);
+  background: linear-gradient(135deg, #1340B0, #1B4FD8);
   text-align: center;
 }
 .faq-cta h2 { font-size: clamp(20px, 2.5vw, 30px); font-weight:900; color:#fff; margin-bottom:10px; }
@@ -84,11 +84,11 @@ include __DIR__ . '/includes/header.php';
 .faq-cta-btn {
   display:inline-flex; align-items:center; gap:8px;
   padding:14px 30px; border-radius:999px;
-  background:linear-gradient(135deg,#D4AF37,#A68920);
-  color:#0A1628; font-size:14px; font-weight:800; text-decoration:none;
+  background:linear-gradient(135deg,#E8282A,#C01A1C);
+  color:#1B4FD8; font-size:14px; font-weight:800; text-decoration:none;
   transition:all 0.3s ease;
 }
-.faq-cta-btn:hover { box-shadow:0 8px 25px rgba(212,175,55,0.45); transform:translateY(-2px); }
+.faq-cta-btn:hover { box-shadow:0 8px 25px rgba(232,40,42,0.45); transform:translateY(-2px); }
 </style>
 
 <!-- HERO -->

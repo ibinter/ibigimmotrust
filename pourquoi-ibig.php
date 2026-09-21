@@ -10,23 +10,23 @@ require_once __DIR__ . "/includes/header.php";
 <style>
 /* ===== HERO ===== */
 .pq-hero {
-  background: linear-gradient(135deg, #060d1a 0%, #0A1628 60%, #0f2044 100%);
+  background: linear-gradient(135deg, #1340B0 0%, #1B4FD8 60%, #1E57E8 100%);
   padding: 75px 0 60px;
   position: relative; overflow: hidden; text-align: center;
 }
 .pq-hero::before {
   content:''; position:absolute; top:-100px; left:50%; transform:translateX(-50%);
   width:600px; height:400px;
-  background:radial-gradient(ellipse,rgba(212,175,55,0.06) 0%,transparent 70%);
+  background:radial-gradient(ellipse,rgba(232,40,42,0.06) 0%,transparent 70%);
 }
-.pq-hero .kicker { font-size:11px; font-weight:800; letter-spacing:0.15em; text-transform:uppercase; color:#D4AF37; margin-bottom:14px; }
+.pq-hero .kicker { font-size:11px; font-weight:800; letter-spacing:0.15em; text-transform:uppercase; color:#E8282A; margin-bottom:14px; }
 .pq-hero h1 { font-size:clamp(24px,3.2vw,44px); font-weight:900; color:#fff; margin:0 0 14px; letter-spacing:-0.02em; line-height:1.2; }
-.pq-hero h1 span { color:#D4AF37; }
+.pq-hero h1 span { color:#E8282A; }
 .pq-hero .desc { font-size:16px; color:rgba(255,255,255,0.65); max-width:700px; margin:0 auto; line-height:1.75; }
 
 /* ===== GRID RAISONS ===== */
 .pq-section { padding:70px 0; background:#FAF7F0; }
-.pq-intro h2 { font-size:clamp(20px,2.5vw,30px); font-weight:800; color:#0A1628; margin-bottom:10px; }
+.pq-intro h2 { font-size:clamp(20px,2.5vw,30px); font-weight:800; color:#1B4FD8; margin-bottom:10px; }
 .pq-intro p { font-size:15px; color:#4B5563; line-height:1.75; max-width:780px; margin-bottom:42px; }
 
 .pq-grid {
@@ -38,50 +38,50 @@ require_once __DIR__ . "/includes/header.php";
   background:#fff;
   border-radius:16px;
   padding:30px 26px;
-  box-shadow:0 6px 24px rgba(10,22,40,0.07);
-  border:1px solid rgba(10,22,40,0.05);
-  border-left:4px solid #D4AF37;
+  box-shadow:0 6px 24px rgba(27,79,216,0.07);
+  border:1px solid rgba(27,79,216,0.05);
+  border-left:4px solid #E8282A;
   transition:all 0.3s ease;
 }
-.pq-card:hover { transform:translateY(-4px); box-shadow:0 16px 40px rgba(10,22,40,0.12); }
+.pq-card:hover { transform:translateY(-4px); box-shadow:0 16px 40px rgba(27,79,216,0.12); }
 .pq-card .icon {
   width:44px; height:44px;
-  background:linear-gradient(135deg,#D4AF37,#A68920);
+  background:linear-gradient(135deg,#E8282A,#C01A1C);
   border-radius:11px;
   display:flex; align-items:center; justify-content:center;
-  color:#0A1628; font-size:17px; margin-bottom:16px;
+  color:#1B4FD8; font-size:17px; margin-bottom:16px;
 }
-.pq-card h3 { font-size:16px; font-weight:800; color:#0A1628; margin-bottom:8px; }
+.pq-card h3 { font-size:16px; font-weight:800; color:#1B4FD8; margin-bottom:8px; }
 .pq-card p { font-size:14px; color:#4B5563; line-height:1.7; }
 
 /* ===== STATS ===== */
 .pq-stats {
   padding:60px 0;
-  background:linear-gradient(135deg,#060d1a,#0A1628);
+  background:linear-gradient(135deg,#1340B0,#1B4FD8);
 }
 .pq-stats-grid {
   display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
   gap:30px; text-align:center;
 }
-.pq-stat-val { font-size:42px; font-weight:900; color:#D4AF37; line-height:1; }
+.pq-stat-val { font-size:42px; font-weight:900; color:#E8282A; line-height:1; }
 .pq-stat-label { font-size:13px; color:rgba(255,255,255,0.55); margin-top:8px; font-weight:600; text-transform:uppercase; letter-spacing:0.06em; }
 
 /* ===== ENGAGEMENT ===== */
 .pq-engagement { padding:70px 0; background:#FAF7F0; text-align:center; }
-.pq-engagement h2 { font-size:clamp(20px,2.5vw,32px); font-weight:900; color:#0A1628; margin-bottom:12px; }
+.pq-engagement h2 { font-size:clamp(20px,2.5vw,32px); font-weight:900; color:#1B4FD8; margin-bottom:12px; }
 .pq-engagement p { font-size:15px; color:#4B5563; max-width:700px; margin:0 auto 34px; line-height:1.75; }
 .pq-cta-row { display:flex; justify-content:center; gap:14px; flex-wrap:wrap; }
 .pq-btn-gold {
   display:inline-flex; align-items:center; gap:8px;
   padding:14px 28px; border-radius:999px;
-  background:linear-gradient(135deg,#D4AF37,#A68920);
-  color:#0A1628; font-size:14px; font-weight:800; text-decoration:none; transition:all 0.3s ease;
+  background:linear-gradient(135deg,#E8282A,#C01A1C);
+  color:#1B4FD8; font-size:14px; font-weight:800; text-decoration:none; transition:all 0.3s ease;
 }
-.pq-btn-gold:hover { box-shadow:0 8px 25px rgba(212,175,55,0.45); transform:translateY(-2px); }
+.pq-btn-gold:hover { box-shadow:0 8px 25px rgba(232,40,42,0.45); transform:translateY(-2px); }
 .pq-btn-navy {
   display:inline-flex; align-items:center; gap:8px;
   padding:14px 28px; border-radius:999px;
-  background:#0A1628; color:#fff;
+  background:#1B4FD8; color:#fff;
   font-size:14px; font-weight:800; text-decoration:none; transition:all 0.3s ease;
 }
 .pq-btn-navy:hover { background:#1a3060; transform:translateY(-2px); }

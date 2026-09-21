@@ -152,7 +152,7 @@ function catalogue_build_query(array $extra = []): string {
 .catalogue-header-left h1{
     font-size:26px;
     font-weight:800;
-    color:#0A1628;
+    color:#1B4FD8;
     margin:0;
 }
 .catalogue-header-left p{
@@ -183,9 +183,9 @@ function catalogue_build_query(array $extra = []): string {
     gap:6px;
 }
 .view-toggle a.active{
-    background:#0A1628;
+    background:#1B4FD8;
     color:#fff;
-    border-color:#0A1628;
+    border-color:#1B4FD8;
 }
 
 /* Select tri */
@@ -237,7 +237,7 @@ function catalogue_build_query(array $extra = []): string {
     cursor:pointer;
 }
 .btn-filter{
-    background:#0A1628;
+    background:#1B4FD8;
     color:#fff;
 }
 .btn-reset{
@@ -263,7 +263,7 @@ function catalogue_build_query(array $extra = []): string {
     border-radius:12px;
     overflow:hidden;
     box-shadow:0 4px 12px rgba(0,0,0,0.06);
-    border-left:5px solid #E8CC6A;
+    border-left:5px solid #FF5557;
     text-decoration:none;
     color:#111827;
     display:flex;
@@ -300,7 +300,7 @@ function catalogue_build_query(array $extra = []): string {
     text-decoration:underline;
 }
 .catalogue-price{
-    color:#D4AF37;
+    color:#E8282A;
     font-weight:700;
     margin-bottom:4px;
 }
@@ -319,7 +319,7 @@ function catalogue_build_query(array $extra = []): string {
     position:absolute;
     top:10px;
     left:10px;
-    background:#D4AF37;
+    background:#E8282A;
     color:#fff;
     font-size:11px;
     padding:4px 8px;
@@ -327,7 +327,7 @@ function catalogue_build_query(array $extra = []): string {
     font-weight:700;
     text-transform:uppercase;
 }
-.catalogue-badge.badge-urgent{ background:#D4AF37; }
+.catalogue-badge.badge-urgent{ background:#E8282A; }
 .catalogue-badge.badge-nouveau{ background:#16a34a; }
 .catalogue-badge.badge-exclusivite{ background:#2563eb; }
 
@@ -361,7 +361,7 @@ function catalogue_build_query(array $extra = []): string {
     color:#d1d5db;
 }
 .wishlist-toggle.active{
-    color:#D4AF37;
+    color:#E8282A;
 }
 
 /* Mode liste */
@@ -399,9 +399,9 @@ function catalogue_build_query(array $extra = []): string {
     color:#374151;
 }
 .catalogue-pagination .active-page{
-    background:#0A1628;
+    background:#1B4FD8;
     color:#fff;
-    border-color:#0A1628;
+    border-color:#1B4FD8;
 }
 .catalogue-pagination .disabled{
     opacity:0.4;
@@ -766,7 +766,7 @@ function catalogue_build_query(array $extra = []): string {
 
   <!-- ================== CARTE (PRETE POUR GOOGLE MAPS) ================== -->
   <div class="catalogue-map-wrapper">
-    <h2 style="font-size:18px;font-weight:700;margin-bottom:8px;color:#0A1628;">
+    <h2 style="font-size:18px;font-weight:700;margin-bottom:8px;color:#1B4FD8;">
       Voir les biens sur une carte
     </h2>
     <p style="font-size:13px;color:#6b7280;margin-bottom:10px;">
