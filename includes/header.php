@@ -121,11 +121,10 @@ h2 + p, h3 + p { margin-top: 0; }
    ANNOUNCEMENT STRIP — TICKER DÉFILANT
 ============================================================ */
 .announcement-strip {
-  background: linear-gradient(90deg, var(--navy-deep) 0%, var(--navy-mid) 50%, var(--navy-deep) 100%);
+  background: #ffffff;
   padding: 9px 0;
-  border-bottom: 1px solid rgba(212,175,55,0.2);
+  border-bottom: 2px solid rgba(212,175,55,0.4);
   overflow: hidden;
-  /* fondu sur les bords */
   -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 6%, #000 94%, transparent 100%);
   mask-image: linear-gradient(90deg, transparent 0%, #000 6%, #000 94%, transparent 100%);
 }
@@ -153,7 +152,7 @@ h2 + p, h3 + p { margin-top: 0; }
   padding: 0 28px;
   font-size: 12.5px;
   font-weight: 700;
-  color: #ffffff;
+  color: #1a1a1a;
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
