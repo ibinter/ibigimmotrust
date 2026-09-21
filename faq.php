@@ -1,216 +1,206 @@
 <?php
+declare(strict_types=1);
 require_once __DIR__ . '/includes/config.php';
 include __DIR__ . '/includes/tracker.php';
 $currentPage = 'faq';
-$pageTitle   = "FAQ – IBIG IMMO TRUST";
+$pageTitle   = "FAQ – Questions fréquentes | IBIG IMMO TRUST";
 include __DIR__ . '/includes/header.php';
 ?>
 
-<!-- ===================== HERO ===================== -->
-<section class="hero-home">
-  <div class="container hero-grid">
+<style>
+/* ===== HERO FAQ ===== */
+.faq-hero {
+  background: linear-gradient(135deg, #060d1a 0%, #0A1628 60%, #0f2044 100%);
+  padding: 70px 0 55px;
+  position: relative; overflow: hidden;
+}
+.faq-hero::before {
+  content:''; position:absolute; top:-80px; right:-80px;
+  width:380px; height:380px; border-radius:50%;
+  background:radial-gradient(circle,rgba(212,175,55,0.07) 0%,transparent 70%);
+}
+.faq-hero .kicker {
+  font-size:11px; font-weight:800; letter-spacing:0.15em;
+  text-transform:uppercase; color:#D4AF37; margin-bottom:14px;
+}
+.faq-hero h1 {
+  font-size: clamp(24px, 3.2vw, 42px); font-weight:900;
+  color:#fff; margin:0 0 14px; letter-spacing:-0.02em; line-height:1.2;
+}
+.faq-hero h1 span { color:#D4AF37; }
+.faq-hero .desc { font-size:16px; color:rgba(255,255,255,0.65); max-width:620px; line-height:1.75; }
 
-    <div>
-      <p class="hero-kicker">FAQ • Questions fréquentes</p>
+/* ===== ACCORDION FAQ ===== */
+.faq-section { padding: 70px 0; background: #FAF7F0; }
+.faq-category-title {
+  font-size: 11px; font-weight: 800; letter-spacing: 0.12em;
+  text-transform: uppercase; color: #A68920;
+  margin: 48px 0 20px; display: flex; align-items: center; gap: 12px;
+}
+.faq-category-title:first-of-type { margin-top: 0; }
+.faq-category-title::after { content:''; flex:1; height:1px; background:rgba(212,175,55,0.2); }
 
-      <h1 class="hero-title">
-        Vos questions les plus fréquentes, nos réponses claires.
-      </h1>
+.faq-item {
+  background: #fff;
+  border-radius: 14px;
+  margin-bottom: 10px;
+  border: 1px solid rgba(10,22,40,0.06);
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+.faq-item:hover { box-shadow: 0 6px 24px rgba(10,22,40,0.09); }
+.faq-question {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 20px 24px; cursor: pointer; gap: 16px;
+  font-size: 15px; font-weight: 700; color: #0A1628;
+  user-select: none;
+}
+.faq-question:hover { color: #A68920; }
+.faq-question .faq-icon {
+  width: 28px; height: 28px; flex-shrink: 0;
+  background: rgba(212,175,55,0.1); border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  color: #A68920; font-size: 12px;
+  transition: all 0.3s ease;
+}
+.faq-item.open .faq-icon { background: #D4AF37; color: #0A1628; transform: rotate(45deg); }
+.faq-answer {
+  display: none;
+  padding: 0 24px 20px;
+  font-size: 14px; color: #4B5563; line-height: 1.75;
+  border-top: 1px solid rgba(10,22,40,0.05);
+}
+.faq-answer p { margin: 14px 0 0; }
+.faq-item.open .faq-answer { display: block; }
 
-      <p class="hero-subtitle">
-        Retrouvez ici toutes les réponses concernant nos services immobiliers, BTP,
-        financement, gestion locative et accompagnement diaspora.
-      </p>
-    </div>
+/* ===== CTA ===== */
+.faq-cta {
+  padding: 60px 0;
+  background: linear-gradient(135deg, #060d1a, #0A1628);
+  text-align: center;
+}
+.faq-cta h2 { font-size: clamp(20px, 2.5vw, 30px); font-weight:900; color:#fff; margin-bottom:10px; }
+.faq-cta p { color:rgba(255,255,255,0.6); margin-bottom:28px; font-size:15px; }
+.faq-cta-btn {
+  display:inline-flex; align-items:center; gap:8px;
+  padding:14px 30px; border-radius:999px;
+  background:linear-gradient(135deg,#D4AF37,#A68920);
+  color:#0A1628; font-size:14px; font-weight:800; text-decoration:none;
+  transition:all 0.3s ease;
+}
+.faq-cta-btn:hover { box-shadow:0 8px 25px rgba(212,175,55,0.45); transform:translateY(-2px); }
+</style>
 
-    <div class="hero-image">
-      <div class="hero-img-main">
-        <img src="<?php echo BASE_URL; ?>/assets/img/hero-immo-afrique.jpg" alt="FAQ IBIG IMMO TRUST">
-      </div>
-    </div>
-
+<!-- HERO -->
+<section class="faq-hero">
+  <div class="container">
+    <p class="kicker">FAQ &bull; Questions fréquentes</p>
+    <h1>Vos questions, <span>nos réponses claires.</span></h1>
+    <p class="desc">Tout ce que vous devez savoir sur nos services immobiliers, BTP, financement, gestion locative et accompagnement diaspora.</p>
   </div>
 </section>
 
-<!-- ===================== FAQ ===================== -->
-<section class="section">
+<!-- FAQ ACCORDION -->
+<section class="faq-section">
   <div class="container">
 
-    <h2 class="section-title">Questions générales</h2>
+    <p class="faq-category-title"><i class="fa-solid fa-circle-info"></i> Questions générales</p>
 
-    <div class="cards-grid">
-
-      <article class="card">
-        <h3>ð Qui est IBIG IMMO TRUST ?</h3>
-        <p>
-          IBIG IMMO TRUST est la branche Immobilier & BTP de INTERMARK BUSINESS INTERNATIONAL GROUP SARL,
-          spécialisée dans la construction, la rénovation, les chantiers inachevés, la gestion locative
-          et le financement immobilier.
-        </p>
-      </article>
-
-      <article class="card">
-        <h3>ð Dans quelles zones intervenez-vous ?</h3>
-        <p>
-          Nous intervenons à Abidjan et dans plusieurs villes de Côte d’Ivoire.
-          Nous accompagnons également les projets initiés par la diaspora (Europe, USA, Canada…).
-        </p>
-      </article>
-
-      <article class="card">
-        <h3>ð Quels types de biens prenez-vous en charge ?</h3>
-        <p>
-          Terrains, maisons, appartements, immeubles, locaux professionnels, bureaux,
-          chantiers inachevés et projets de construction.
-        </p>
-      </article>
-
+    <div class="faq-item">
+      <div class="faq-question">C'est quoi IBIG IMMO TRUST ?<span class="faq-icon"><i class="fa-solid fa-plus"></i></span></div>
+      <div class="faq-answer"><p>IBIG IMMO TRUST est la branche Immobilier & BTP de INTERMARK BUSINESS INTERNATIONAL GROUP SARL, spécialisée dans la construction, la rénovation, les chantiers inachevés, la gestion locative et le financement immobilier en Côte d'Ivoire.</p></div>
     </div>
 
-
-    <!-- BLOC 2 -->
-    <h2 class="section-title" style="margin-top:40px;">Financement & modèles économiques</h2>
-
-    <div class="cards-grid">
-
-      <article class="card">
-        <h3>ð° Quel est le modèle Direct IBIG ?</h3>
-        <p>
-          C’est un modèle sans avance où IBIG préfinance la finition ou la construction.
-          Le remboursement se fait via les loyers sur une durée de 3 à 7 ans.
-        </p>
-      </article>
-
-      <article class="card">
-        <h3>ð° Comment fonctionne le financement par investisseurs agréés ?</h3>
-        <p>
-          Le propriétaire apporte 10 à 20% du budget.  
-          Des investisseurs privés complètent et se remboursent sur les loyers.
-        </p>
-      </article>
-
-      <article class="card">
-        <h3>ð° Puis-je financer mon projet avec une banque ?</h3>
-        <p>
-          Oui. Nous collaborons avec des banques et microfinances, montons le dossier
-          et supervisons le chantier pour sécuriser les décaissements.
-        </p>
-      </article>
-
+    <div class="faq-item">
+      <div class="faq-question">Dans quelles zones intervenez-vous ?<span class="faq-icon"><i class="fa-solid fa-plus"></i></span></div>
+      <div class="faq-answer"><p>Nous intervenons à Abidjan et dans plusieurs villes de Côte d'Ivoire. Nous accompagnons également les projets initiés par la diaspora depuis l'Europe, les USA, le Canada et d'autres pays.</p></div>
     </div>
 
-
-    <!-- BLOC 3 -->
-    <h2 class="section-title" style="margin-top:40px;">Gestion locative & propriétaires</h2>
-
-    <div class="cards-grid">
-
-      <article class="card">
-        <h3>ð  Offrez-vous le loyer garanti ?</h3>
-        <p>
-          Oui, selon le contrat. Le propriétaire reçoit son loyer au plus tard le 10 du mois,
-          même en cas de retard du locataire (conditions définies dans le mandat).
-        </p>
-      </article>
-
-      <article class="card">
-        <h3>ð  Comment se passe la mise en location ?</h3>
-        <p>
-          Photos professionnelles, diffusion, visites, contrôle de solvabilité,
-          signature du bail, gestion quotidienne et maintenance.
-        </p>
-      </article>
-
-      <article class="card">
-        <h3>ð  Puis-je confier un bien à distance ?</h3>
-        <p>
-          Oui, grâce à notre système de suivi digital (photos, vidéos, visites virtuelles,
-          rapports réguliers). Idéal pour la diaspora.
-        </p>
-      </article>
-
+    <div class="faq-item">
+      <div class="faq-question">Quels types de biens prenez-vous en charge ?<span class="faq-icon"><i class="fa-solid fa-plus"></i></span></div>
+      <div class="faq-answer"><p>Terrains, maisons, appartements, immeubles, locaux professionnels, bureaux, chantiers inachevés et projets de construction neuve.</p></div>
     </div>
 
+    <p class="faq-category-title"><i class="fa-solid fa-coins"></i> Financement & modèles économiques</p>
 
-    <!-- BLOC 4 -->
-    <h2 class="section-title" style="margin-top:40px;">Chantiers & Construction</h2>
-
-    <div class="cards-grid">
-
-      <article class="card">
-        <h3>ðï¸ Pouvez-vous terminer un chantier abandonné ?</h3>
-        <p>
-          Oui. Nous analysons l’état du chantier, corrigeons les malfaçons
-          et terminons les travaux avec un suivi technique strict.
-        </p>
-      </article>
-
-      <article class="card">
-        <h3>ðï¸ Proposez-vous la construction clé en main ?</h3>
-        <p>
-          Oui. De la fondation à la finition : planification, construction,
-          supervision et livraison prête à habiter.
-        </p>
-      </article>
-
-      <article class="card">
-        <h3>ðï¸ Est-ce possible d’avoir un devis avant d’acheter un terrain ?</h3>
-        <p>
-          Oui, nous proposons une étude de faisabilité afin d’aider le client
-          à prendre une décision éclairée.
-        </p>
-      </article>
-
+    <div class="faq-item">
+      <div class="faq-question">Quel est le modèle Direct IBIG ?<span class="faq-icon"><i class="fa-solid fa-plus"></i></span></div>
+      <div class="faq-answer"><p>C'est un modèle sans avance où IBIG préfinance la finition ou la construction. Le remboursement se fait via les loyers sur une durée de 3 à 7 ans.</p></div>
     </div>
 
+    <div class="faq-item">
+      <div class="faq-question">Comment fonctionne le financement par investisseurs agréés ?<span class="faq-icon"><i class="fa-solid fa-plus"></i></span></div>
+      <div class="faq-answer"><p>Le propriétaire apporte 10 à 20% du budget. Des investisseurs privés agréés complètent le financement et se remboursent progressivement sur les loyers générés.</p></div>
+    </div>
 
-    <!-- BLOC 5 -->
-    <h2 class="section-title" style="margin-top:40px;">Assistance foncière</h2>
+    <div class="faq-item">
+      <div class="faq-question">Puis-je financer mon projet avec une banque ?<span class="faq-icon"><i class="fa-solid fa-plus"></i></span></div>
+      <div class="faq-answer"><p>Oui. Nous collaborons avec des banques et microfinances partenaires, montons le dossier complet et supervisons le chantier pour sécuriser les décaissements.</p></div>
+    </div>
 
-    <div class="cards-grid">
+    <p class="faq-category-title"><i class="fa-solid fa-key"></i> Gestion locative & propriétaires</p>
 
-      <article class="card">
-        <h3>ð Pouvez-vous vérifier un titre foncier ?</h3>
-        <p>
-          Oui, nous faisons les vérifications auprès des services compétents
-          (documents, morcellement, duplicatas, cadastre…).
-        </p>
-      </article>
+    <div class="faq-item">
+      <div class="faq-question">Offrez-vous le loyer garanti ?<span class="faq-icon"><i class="fa-solid fa-plus"></i></span></div>
+      <div class="faq-answer"><p>Oui, selon les termes du contrat. Le propriétaire reçoit son loyer au plus tard le 10 du mois, même en cas de retard du locataire (conditions définies dans le mandat de gestion).</p></div>
+    </div>
 
-      <article class="card">
-        <h3>ð Aidez-vous à sécuriser un achat de terrain ?</h3>
-        <p>
-          Oui : recherche d’historique, validation des documents, accompagnement notarial,
-          et conseil complet avant signature.
-        </p>
-      </article>
+    <div class="faq-item">
+      <div class="faq-question">Comment se passe la mise en location ?<span class="faq-icon"><i class="fa-solid fa-plus"></i></span></div>
+      <div class="faq-answer"><p>Photos professionnelles, diffusion multicanal, organisation des visites, contrôle de solvabilité, signature du bail, gestion quotidienne et maintenance du bien.</p></div>
+    </div>
 
-      <article class="card">
-        <h3>ð Proposez-vous un service pour la diaspora ?</h3>
-        <p>
-          Oui. Nous gérons toutes les étapes à distance avec transparence totale :
-          documents, négociation, vidéos, rapports.
-        </p>
-      </article>
+    <div class="faq-item">
+      <div class="faq-question">Puis-je confier un bien à distance (diaspora) ?<span class="faq-icon"><i class="fa-solid fa-plus"></i></span></div>
+      <div class="faq-answer"><p>Oui, grâce à notre système de suivi digital : photos, vidéos, visites virtuelles, rapports réguliers. Idéal pour la diaspora résidant en Europe, USA ou Canada.</p></div>
+    </div>
 
+    <p class="faq-category-title"><i class="fa-solid fa-helmet-safety"></i> Chantiers & Construction</p>
+
+    <div class="faq-item">
+      <div class="faq-question">Pouvez-vous terminer un chantier abandonné ?<span class="faq-icon"><i class="fa-solid fa-plus"></i></span></div>
+      <div class="faq-answer"><p>Oui. Nous analysons l'état du chantier, identifions et corrigeons les malfaçons, puis terminons les travaux avec un suivi technique strict et documenté.</p></div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Proposez-vous la construction clé en main ?<span class="faq-icon"><i class="fa-solid fa-plus"></i></span></div>
+      <div class="faq-answer"><p>Oui. De la fondation à la finition : planification, construction, supervision technique et livraison prête à habiter ou à exploiter.</p></div>
+    </div>
+
+    <p class="faq-category-title"><i class="fa-solid fa-file-shield"></i> Assistance foncière</p>
+
+    <div class="faq-item">
+      <div class="faq-question">Pouvez-vous vérifier un titre foncier ?<span class="faq-icon"><i class="fa-solid fa-plus"></i></span></div>
+      <div class="faq-answer"><p>Oui, nous effectuons les vérifications auprès des services compétents : authenticité des documents, morcellement, duplicatas, état cadastral et historique du bien.</p></div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Aidez-vous à sécuriser un achat de terrain ?<span class="faq-icon"><i class="fa-solid fa-plus"></i></span></div>
+      <div class="faq-answer"><p>Oui : recherche d'historique, validation des documents, accompagnement notarial et conseil complet avant toute signature d'acte de vente.</p></div>
     </div>
 
   </div>
 </section>
 
-
-<!-- ===================== CTA ===================== -->
-<section class="section-cta">
-  <div class="container cta-inner">
-
-    <div>
-      <h2>Vous n’avez pas trouvé votre réponse ?</h2>
-      <p>Notre équipe est disponible pour vous accompagner.</p>
-    </div>
-
-    <a href="contact.php" class="btn-primary btn-large">Nous contacter</a>
-
+<!-- CTA -->
+<section class="faq-cta">
+  <div class="container">
+    <h2>Vous n'avez pas trouvé votre réponse ?</h2>
+    <p>Notre équipe est disponible pour vous accompagner personnellement.</p>
+    <a href="<?= BASE_URL ?>/contact.php" class="faq-cta-btn">
+      <i class="fa-solid fa-paper-plane"></i> Nous contacter
+    </a>
   </div>
 </section>
+
+<script>
+document.querySelectorAll('.faq-question').forEach(q => {
+  q.addEventListener('click', () => {
+    const item = q.parentElement;
+    document.querySelectorAll('.faq-item.open').forEach(o => { if(o!==item) o.classList.remove('open'); });
+    item.classList.toggle('open');
+  });
+});
+</script>
 
 <?php include __DIR__ . '/includes/footer.php'; ?>
