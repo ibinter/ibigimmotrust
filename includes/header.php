@@ -159,6 +159,11 @@ img { max-width: 100%; display: block; }
   box-shadow: 0 8px 40px rgba(10,22,40,0.4);
 }
 
+.header-premium.scrolled .header-row-top { min-height: 54px; }
+.header-premium.scrolled .header-row-bottom { display: none !important; }
+.announcement-strip { transition: max-height 0.3s ease, padding 0.3s ease, opacity 0.25s ease; overflow: hidden; }
+.announcement-strip.hidden { max-height: 0; padding: 0; opacity: 0; pointer-events: none; }
+
 .header-inner {
   max-width: 1380px;
   margin: 0 auto;
@@ -1177,11 +1182,16 @@ img { max-width: 100%; display: block; }
   document.addEventListener("keydown",(e)=>{ if(e.key==="Escape"&&opened) closeMenu(); });
 })();
 
-// Sticky scroll effect
+// Sticky scroll effect — shrink header + hide strip on scroll
 (function(){
   const h=document.getElementById("main-header");
+  const strip=document.querySelector(".announcement-strip");
   if(!h) return;
-  function check(){ h.classList.toggle("scrolled", window.scrollY>20); }
+  function check(){
+    const s=window.scrollY>30;
+    h.classList.toggle("scrolled",s);
+    if(strip) strip.classList.toggle("hidden",s);
+  }
   check();
   window.addEventListener("scroll",check,{passive:true});
 })();

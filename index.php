@@ -5,7 +5,7 @@ require_once __DIR__ . '/includes/config.php';
 require_once __DIR__ . '/includes/tracker.php';
 
 $currentPage = 'home';
-$disableHeaderSlider = true;
+$disableHeaderSlider = false;
 $pageTitle = "IBIG IMMO TRUST - Immobilier, BTP et valorisation en Côte d'Ivoire";
 $metaDescription = "Immobilier, BTP, gestion locative, reprise de chantiers, rénovation et financement structuré en Côte d'Ivoire avec IBIG IMMO TRUST.";
 $canonicalUrl = url('');
@@ -1671,113 +1671,8 @@ include __DIR__ . '/includes/header.php';
 </style>
 
 <main class="home-page">
-  <section class="home-hero">
+  <section class="home-hero" style="padding:24px 0 28px;">
     <div class="home-shell">
-      <div class="home-hero__grid">
-        <div>
-          <span class="home-hero__eyebrow">
-            <i class="fa-solid fa-compass"></i>
-            Immobilier, BTP, gestion locative, financement
-          </span>
-
-          <h1 class="home-hero__title">
-            Transformez vos terrains, biens et chantiers en actifs mieux pilotés, mieux valorisés et prêts à produire.
-          </h1>
-
-          <p class="home-hero__text">
-            IBIG IMMO TRUST accompagne l'achat, la vente, la location, la gestion locative,
-            la reprise de chantiers, la rénovation, la construction et les montages financiers
-            avec une approche claire pour les propriétaires, investisseurs et la diaspora.
-          </p>
-
-          <div class="home-hero__actions">
-            <a href="<?= home_h(url('contact.php')) ?>" class="home-button" onclick="trackEvent('click_contact_home');">
-              Décrire mon projet
-            </a>
-            <a href="<?= home_h(url('rdv.php')) ?>" class="home-button--outline" onclick="trackEvent('click_rdv_home');">
-              Prendre rendez-vous
-            </a>
-          </div>
-
-          <div class="home-hero__metrics">
-            <?php foreach ($heroMetrics as $metric): ?>
-              <div class="home-metric">
-                <strong><?= home_h($metric['value']) ?></strong>
-                <span><?= home_h($metric['label']) ?></span>
-              </div>
-            <?php endforeach; ?>
-          </div>
-
-          <div class="home-hero__note">
-            <i class="fa-solid fa-circle-info"></i>
-            Solutions pensées pour l'exploitation, la sécurisation et la rentabilité de vos projets.
-          </div>
-        </div>
-
-        <aside class="home-spotlight">
-          <?php if ($heroProperty !== null): ?>
-            <?php
-            $heroUrl = home_property_url($heroProperty);
-            $heroImage = home_image_path((string) ($heroProperty['image_principale'] ?? ''));
-            $heroTitle = home_fix_text((string) ($heroProperty['titre'] ?? 'Bien immobilier'));
-            $heroLocation = home_location_label($heroProperty);
-            $heroPrice = home_price_label($heroProperty['prix'] ?? 0);
-            $heroType = home_type_label($heroProperty['type'] ?? '');
-            $heroTransaction = home_transaction_label($heroProperty['transaction'] ?? '');
-            ?>
-            <article class="home-spotlight-card">
-              <a class="home-spotlight-card__media" href="<?= home_h($heroUrl) ?>">
-                <img src="<?= home_h($heroImage) ?>" alt="<?= home_h($heroTitle) ?>">
-                <span class="home-spotlight-card__badge"><?= home_h(home_visibility_badge($heroProperty)) ?></span>
-              </a>
-
-              <div class="home-spotlight-card__body">
-                <div class="home-spotlight-card__eyebrow">
-                  <span><?= home_h($heroType) ?></span>
-                  <?php if ($heroTransaction !== ''): ?>
-                    <span><?= home_h($heroTransaction) ?></span>
-                  <?php endif; ?>
-                </div>
-
-                <h2 class="home-spotlight-card__title"><?= home_h($heroTitle) ?></h2>
-                <p class="home-spotlight-card__meta"><?= home_h($heroLocation) ?></p>
-                <p class="home-spotlight-card__price"><?= home_h($heroPrice) ?></p>
-
-                <?php $heroTokens = home_property_tokens($heroProperty); ?>
-                <?php if (!empty($heroTokens)): ?>
-                  <div class="home-token-row">
-                    <?php foreach ($heroTokens as $token): ?>
-                      <span class="home-token"><?= home_h($token) ?></span>
-                    <?php endforeach; ?>
-                  </div>
-                <?php endif; ?>
-
-                <div class="home-hero__actions" style="margin-top:16px;">
-                  <a href="<?= home_h($heroUrl) ?>" class="home-button--light" onclick="trackEvent('click_featured_property_home');">Voir le bien</a>
-                  <a href="<?= home_h(url('rdv.php')) ?>" class="home-button--outline" onclick="trackEvent('click_rdv_home');">Planifier une visite</a>
-                </div>
-              </div>
-            </article>
-          <?php else: ?>
-            <article class="home-spotlight-card">
-              <div class="home-spotlight-card__media">
-                <img src="<?= home_h(url('assets/img/hero-immo-afrique3.jpg')) ?>" alt="IBIG IMMO TRUST en Côte d'Ivoire">
-                <span class="home-spotlight-card__badge">Accompagnement premium</span>
-              </div>
-              <div class="home-spotlight-card__body">
-                <h2 class="home-spotlight-card__title">Des projets mieux cadrés, mieux suivis et plus lisibles.</h2>
-                <p class="home-spotlight-card__meta">Immobilier, BTP, exécution, valorisation et suivi diaspora.</p>
-                <div class="home-token-row">
-                  <span class="home-token">Analyse du besoin</span>
-                  <span class="home-token">Pilotage terrain</span>
-                  <span class="home-token">Suivi digital</span>
-                </div>
-              </div>
-            </article>
-          <?php endif; ?>
-        </aside>
-      </div>
-
       <div class="home-search-wrap">
         <form class="home-search" action="<?= home_h(url('tous_les_biens.php')) ?>" method="get">
           <div class="home-search__grid">
