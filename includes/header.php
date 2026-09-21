@@ -933,7 +933,7 @@ h2 + p, h3 + p { margin-top: 0; }
         <a href="<?= BASE_URL; ?>/btp.php" class="<?= $currentPage==='btp'?'active':'' ?>">BTP</a>
         <a href="<?= BASE_URL; ?>/financement.php" class="<?= $currentPage==='financement'?'active':'' ?>">Financement</a>
         <a href="<?= BASE_URL; ?>/diaspora.php" class="<?= $currentPage==='diaspora'?'active':'' ?>">Diaspora</a>
-        <a href="https://forms.intermark-business.com/ibigimmotrust" target="_blank" rel="noopener">Formulaires</a>
+
         <a href="<?= BASE_URL; ?>/contact.php" class="<?= $currentPage==='contact'?'active':'' ?>">Contact</a>
       </nav>
 
@@ -1042,7 +1042,7 @@ h2 + p, h3 + p { margin-top: 0; }
     <a href="<?= BASE_URL; ?>/btp.php"><i class="fa-solid fa-helmet-safety"></i> BTP & Construction</a>
     <a href="<?= BASE_URL; ?>/financement.php"><i class="fa-solid fa-coins"></i> Financement</a>
     <a href="<?= BASE_URL; ?>/diaspora.php"><i class="fa-solid fa-globe"></i> Diaspora</a>
-    <a href="https://forms.intermark-business.com/ibigimmotrust" target="_blank"><i class="fa-solid fa-file-lines"></i> Formulaires</a>
+
     <a href="<?= BASE_URL; ?>/contact.php"><i class="fa-solid fa-envelope"></i> Contact</a>
     <a href="<?= BASE_URL; ?>/tous_les_biens.php" class="mobile-highlight">
       <i class="fa-solid fa-location-dot"></i> Biens disponibles
