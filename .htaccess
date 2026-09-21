@@ -1,0 +1,135 @@
+##############################################
+# IBIG IMMO TRUST — HTACCESS FINAL PROPRE
+##############################################
+
+RewriteEngine On
+
+RewriteRule ^recherche/?$ recherche.php [L,QSA]
+
+##############################################
+# 1 — SITEMAP (PRIORITÉ)
+##############################################
+
+RewriteRule ^sitemap\.xml$ sitemap.php [L]
+
+##############################################
+# 2 — AUTORISER FICHIERS PHYSIQUES
+##############################################
+
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+##############################################
+# 3 — ROUTES IMMOBILIÈRES (IMPORTANT)
+##############################################
+
+# Page diaspora
+RewriteRule ^diaspora/?$ diaspora.php [L]
+
+# Tous les biens
+RewriteRule ^biens/?$ tous_les_biens.php [L]
+
+# Bien individuel SEO
+RewriteRule ^bien/([a-zA-Z0-9\-]+)/?$ /bien.php?slug=$1 [L,QSA]
+
+# Immobilier par ville
+RewriteRule ^immobilier/([a-z0-9-]+)/?$ immobilier.php?ville=$1 [L,QSA]
+
+# Type + transaction + ville
+RewriteRule ^(villas|appartements|terrains)-(a-vendre|a-louer)-([a-z0-9-]+)/?$ tous_les_biens.php?type=$1&transaction=$2&ville=$3 [L,QSA]
+
+##############################################
+# 4 — BLOG SEO
+##############################################
+
+RewriteRule ^blog/?$ blog.php [L]
+RewriteRule ^blog/top-articles/?$ blog-top-articles.php [L]
+RewriteRule ^blog/categorie/([a-z0-9-]+)/?$ blog.php?cat_slug=$1 [L,QSA]
+RewriteRule ^blog/tag/([a-z0-9-]+)/?$ blog.php?tag=$1 [L,QSA]
+RewriteRule ^blog/([a-z0-9-]+)/?$ article.php?slug=$1 [L,QSA]
+
+##############################################
+# 5 — ADMIN
+##############################################
+
+RewriteRule ^admin/?$ admin/login.php [L]
+
+##############################################
+
+##############################################
+# IBIG IMMO — APP REACT (opportunites-annonces)
+##############################################
+
+RewriteCond %{REQUEST_URI} ^/opportunites-annonces/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^opportunites-annonces/(.*)$ /opportunites-annonces/index.html [L]
+
+# 6 — URLS PROPRES GENERIQUES
+##############################################
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([a-zA-Z0-9_-]+)/?$ $1.php [L]
+
+##############################################
+# 7 — SUPPRIMER .PHP (SEO)
+##############################################
+
+RewriteCond %{THE_REQUEST} \s/([^.]+)\.php[\s?] [NC]
+RewriteRule ^ /%1 [R=301,L]
+
+##############################################
+# 8 — SECURITE FICHIERS
+##############################################
+
+<FilesMatch "\.(env|ini|log|sh|sql|bak)$">
+Require all denied
+</FilesMatch>
+
+##############################################
+# 9 — BLOQUER LISTING DOSSIERS
+##############################################
+
+Options -Indexes
+
+##############################################
+# 10 — ANTI HOTLINK IMAGES
+##############################################
+
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^https://(www\.)?ibigimmotrust\.com [NC]
+RewriteRule \.(jpg|jpeg|png|webp|gif)$ - [F]
+
+##############################################
+# 11 — COMPRESSION GZIP
+##############################################
+
+<IfModule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/plain text/html text/css text/xml
+AddOutputFilterByType DEFLATE application/xml application/xhtml+xml
+AddOutputFilterByType DEFLATE application/rss+xml
+AddOutputFilterByType DEFLATE application/javascript
+</IfModule>
+
+##############################################
+# 12 — CACHE NAVIGATEUR
+##############################################
+
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType image/jpg "access plus 1 month"
+ExpiresByType image/jpeg "access plus 1 month"
+ExpiresByType image/png "access plus 1 month"
+ExpiresByType image/webp "access plus 1 month"
+ExpiresByType image/gif "access plus 1 month"
+ExpiresByType text/css "access plus 1 month"
+ExpiresByType application/javascript "access plus 1 month"
+ExpiresByType text/html "access plus 1 hour"
+</IfModule>
+
+##############################################
+# 13 — PAGE 404
+##############################################
+
+ErrorDocument 404 /404.php

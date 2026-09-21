@@ -54,7 +54,7 @@ include __DIR__ . '/includes/header.php';
     <div class="cards-grid">
 
       <article class="card">
-        <h3>ð§¾ Préparation des documents</h3>
+        <h3> Préparation des documents</h3>
         <p>
           Pièces administratives, preuves de revenus, attestations professionnelles,
           documents fonciers et techniques.
@@ -62,7 +62,7 @@ include __DIR__ . '/includes/header.php';
       </article>
 
       <article class="card">
-        <h3>ð Étude financière</h3>
+        <h3> Étude financière</h3>
         <p>
           Calcul de la capacité d’emprunt, estimation de l’apport, analyse des charges
           et du plan de remboursement.
@@ -70,7 +70,7 @@ include __DIR__ . '/includes/header.php';
       </article>
 
       <article class="card">
-        <h3>ð¦ Présentation aux banques</h3>
+        <h3> Présentation aux banques</h3>
         <p>
           Transmission de votre dossier aux banques partenaires pour obtenir
           les meilleures offres de financement.
@@ -92,22 +92,22 @@ include __DIR__ . '/includes/header.php';
     <div class="cards-grid">
 
       <article class="card">
-        <h3>ð¦ Banques commerciales</h3>
+        <h3> Banques commerciales</h3>
         <p>Sociétés bancaires agréées offrant des crédits immobiliers classiques.</p>
       </article>
 
       <article class="card">
-        <h3>ð³ Microfinances</h3>
+        <h3> Microfinances</h3>
         <p>Institutions offrant microcrédits, financements flexibles et prêts progressifs.</p>
       </article>
 
       <article class="card">
-        <h3>ð£ Fonds & institutions publiques</h3>
+        <h3> Fonds & institutions publiques</h3>
         <p>Aides, programmes sociaux et financements immobiliers étatiques.</p>
       </article>
 
       <article class="card">
-        <h3>ð Partenaires IBIG</h3>
+        <h3> Partenaires IBIG</h3>
         <p>Réseaux de partenaires permettant un suivi technique et financier sécurisé.</p>
       </article>
 
@@ -176,37 +176,37 @@ include __DIR__ . '/includes/header.php';
     <div class="cards-grid">
 
       <article class="card">
-        <h3>ð Dossier solide</h3>
+        <h3> Dossier solide</h3>
         <p>Votre dossier est présenté professionnellement aux banques.</p>
       </article>
 
       <article class="card">
-        <h3>âï¸ Conditions optimisées</h3>
+        <h3> Conditions optimisées</h3>
         <p>Taux négociés, durées adaptées, garanties raisonnables.</p>
       </article>
 
       <article class="card">
-        <h3>ð¡ï¸ Sécurisation du financement</h3>
+        <h3> Sécurisation du financement</h3>
         <p>
           IBIG supervise le décaissement étape par étape pour éviter les détournements
           de fonds ou les travaux incorrects.
         </p>
       </article>
 
-      <article class="card">
-        <h3>ð± Suivi digital</h3>
+      <article class="card">    
+      <h3>Suivi digital</h3>
         <p>Rapports, photos, vidéos, échanges & validation à distance.</p>
       </article>
 
       <article class="card">
-        <h3>ð Solution idéale diaspora</h3>
+        <h3> Solution idéale diaspora</h3>
         <p>
           Transparence totale pour les clients résidant en Europe, USA, Asie ou Afrique.
         </p>
       </article>
 
       <article class="card">
-        <h3>ð Projets plus crédibles</h3>
+        <h3> Projets plus crédibles</h3>
         <p>Un projet IBIG inspire confiance aux partenaires financiers.</p>
       </article>
 

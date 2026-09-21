@@ -130,6 +130,9 @@ function catalogue_build_query(array $extra = []): string {
 }
 ?>
 
+<!-- GLightbox CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+
 <style>
 .catalogue-wrapper{
     max-width:1250px;
@@ -149,7 +152,7 @@ function catalogue_build_query(array $extra = []): string {
 .catalogue-header-left h1{
     font-size:26px;
     font-weight:800;
-    color:#003c96;
+    color:#0A1628;
     margin:0;
 }
 .catalogue-header-left p{
@@ -180,9 +183,9 @@ function catalogue_build_query(array $extra = []): string {
     gap:6px;
 }
 .view-toggle a.active{
-    background:#003c96;
+    background:#0A1628;
     color:#fff;
-    border-color:#003c96;
+    border-color:#0A1628;
 }
 
 /* Select tri */
@@ -234,7 +237,7 @@ function catalogue_build_query(array $extra = []): string {
     cursor:pointer;
 }
 .btn-filter{
-    background:#003c96;
+    background:#0A1628;
     color:#fff;
 }
 .btn-reset{
@@ -260,17 +263,21 @@ function catalogue_build_query(array $extra = []): string {
     border-radius:12px;
     overflow:hidden;
     box-shadow:0 4px 12px rgba(0,0,0,0.06);
-    border-left:5px solid #ff9f1c;
+    border-left:5px solid #E8CC6A;
     text-decoration:none;
     color:#111827;
     display:flex;
     flex-direction:column;
     position:relative;
 }
-.catalogue-card img{
+.catalogue-card-img-wrapper{
+    width:100%;
+}
+.catalogue-card-img-wrapper img{
     width:100%;
     height:170px;
     object-fit:cover;
+    display:block;
 }
 .catalogue-card-body{
     padding:10px 12px 12px;
@@ -285,8 +292,15 @@ function catalogue_build_query(array $extra = []): string {
     font-weight:700;
     margin:0 0 4px;
 }
+.catalogue-card h3 a{
+    text-decoration:none;
+    color:#111827;
+}
+.catalogue-card h3 a:hover{
+    text-decoration:underline;
+}
 .catalogue-price{
-    color:#e30613;
+    color:#D4AF37;
     font-weight:700;
     margin-bottom:4px;
 }
@@ -305,7 +319,7 @@ function catalogue_build_query(array $extra = []): string {
     position:absolute;
     top:10px;
     left:10px;
-    background:#e30613;
+    background:#D4AF37;
     color:#fff;
     font-size:11px;
     padding:4px 8px;
@@ -313,7 +327,7 @@ function catalogue_build_query(array $extra = []): string {
     font-weight:700;
     text-transform:uppercase;
 }
-.catalogue-badge.badge-urgent{ background:#e30613; }
+.catalogue-badge.badge-urgent{ background:#D4AF37; }
 .catalogue-badge.badge-nouveau{ background:#16a34a; }
 .catalogue-badge.badge-exclusivite{ background:#2563eb; }
 
@@ -323,6 +337,7 @@ function catalogue_build_query(array $extra = []): string {
     justify-content:space-between;
     align-items:center;
     margin-top:6px;
+    padding:0 12px 10px;
 }
 .whatsapp-btn{
     display:inline-flex;
@@ -346,15 +361,18 @@ function catalogue_build_query(array $extra = []): string {
     color:#d1d5db;
 }
 .wishlist-toggle.active{
-    color:#e30613;
+    color:#D4AF37;
 }
 
 /* Mode liste */
 .catalogue-card.list{
     flex-direction:row;
 }
-.catalogue-card.list img{
+.catalogue-card.list .catalogue-card-img-wrapper{
     width:220px;
+    flex-shrink:0;
+}
+.catalogue-card.list .catalogue-card-img-wrapper img{
     height:100%;
 }
 .catalogue-card.list .catalogue-card-body{
@@ -381,9 +399,9 @@ function catalogue_build_query(array $extra = []): string {
     color:#374151;
 }
 .catalogue-pagination .active-page{
-    background:#003c96;
+    background:#0A1628;
     color:#fff;
-    border-color:#003c96;
+    border-color:#0A1628;
 }
 .catalogue-pagination .disabled{
     opacity:0.4;
@@ -407,7 +425,7 @@ function catalogue_build_query(array $extra = []): string {
     .catalogue-header{
         align-items:flex-start;
     }
-    .catalogue-card.list img{
+    .catalogue-card.list .catalogue-card-img-wrapper{
         width:140px;
     }
 }
@@ -549,9 +567,10 @@ function catalogue_build_query(array $extra = []): string {
             } else {
                 $url .= '?id='.$b['id'];
             }
-            $img = !empty($b['image_principale'])
-                ? htmlspecialchars($b['image_principale'])
-                : 'assets/img/no-image.jpg';
+
+            $imgPath = !empty($b['image_principale'])
+                ? '/'.ltrim($b['image_principale'],'/')
+                : '/assets/img/no-image.jpg';
 
             $typeAff  = $b['type'] ?? ($b['type_bien'] ?? '');
             $transAff = $b['transaction'] ?? ($b['statut'] ?? '');
@@ -573,37 +592,45 @@ function catalogue_build_query(array $extra = []): string {
             <span class="catalogue-badge <?= $badgeClasse ?>"><?= htmlspecialchars($badgeTexte) ?></span>
           <?php endif; ?>
 
-          <a href="<?= $url ?>" style="display:flex;flex:1;text-decoration:none;color:inherit;">
-            <img src="<?= $img ?>" alt="Photo bien">
-            <div class="catalogue-card-body">
-              <div class="catalogue-type">
-                <?= htmlspecialchars(trim($typeAff.' · '.$transAff)) ?>
-              </div>
-              <h3><?= htmlspecialchars($b['titre']) ?></h3>
+          <div class="catalogue-card-img-wrapper">
+            <a href="<?= htmlspecialchars($imgPath) ?>"
+               class="glightbox-bien"
+               data-gallery="bien-<?= (int)$b['id'] ?>"
+               data-title="<?= htmlspecialchars($b['titre']) ?>">
+              <img src="<?= htmlspecialchars($imgPath) ?>" alt="Photo bien">
+            </a>
+          </div>
 
-              <?php if(!empty($b['prix'])): ?>
-                <p class="catalogue-price">
-                  <?= number_format($b['prix'],0,',',' ') ?> FCFA
-                </p>
-              <?php endif; ?>
-
-              <p class="catalogue-location">
-                <?= htmlspecialchars(trim(($b['ville'] ?? '').' • '.($b['quartier'] ?? ''))) ?>
-              </p>
-
-              <p class="catalogue-meta">
-                <?php
-                  $surf = $b['superficie'] ?? ($b['superficie_habitable'] ?? '');
-                  if ($surf) {
-                      echo htmlspecialchars($surf).' · ';
-                  }
-                  if (!empty($b['chambres'])) {
-                      echo (int)$b['chambres'] . ' ch.';
-                  }
-                ?>
-              </p>
+          <div class="catalogue-card-body">
+            <div class="catalogue-type">
+              <?= htmlspecialchars(trim($typeAff.' · '.$transAff)) ?>
             </div>
-          </a>
+            <h3>
+              <a href="<?= $url ?>"><?= htmlspecialchars($b['titre']) ?></a>
+            </h3>
+
+            <?php if(!empty($b['prix'])): ?>
+              <p class="catalogue-price">
+                <?= number_format($b['prix'],0,',',' ') ?> FCFA
+              </p>
+            <?php endif; ?>
+
+            <p class="catalogue-location">
+              <?= htmlspecialchars(trim(($b['ville'] ?? '').' • '.($b['quartier'] ?? ''))) ?>
+            </p>
+
+            <p class="catalogue-meta">
+              <?php
+                $surf = $b['superficie'] ?? ($b['superficie_habitable'] ?? '');
+                if ($surf) {
+                    echo htmlspecialchars($surf).' · ';
+                }
+                if (!empty($b['chambres'])) {
+                    echo (int)$b['chambres'] . ' ch.';
+                }
+              ?>
+            </p>
+          </div>
 
           <div class="card-actions">
             <a class="whatsapp-btn" target="_blank"
@@ -626,9 +653,10 @@ function catalogue_build_query(array $extra = []): string {
             } else {
                 $url .= '?id='.$b['id'];
             }
-            $img = !empty($b['image_principale'])
-                ? htmlspecialchars($b['image_principale'])
-                : 'assets/img/no-image.jpg';
+
+            $imgPath = !empty($b['image_principale'])
+                ? '/'.ltrim($b['image_principale'],'/')
+                : '/assets/img/no-image.jpg';
 
             $typeAff  = $b['type'] ?? ($b['type_bien'] ?? '');
             $transAff = $b['transaction'] ?? ($b['statut'] ?? '');
@@ -649,37 +677,45 @@ function catalogue_build_query(array $extra = []): string {
             <span class="catalogue-badge <?= $badgeClasse ?>"><?= htmlspecialchars($badgeTexte) ?></span>
           <?php endif; ?>
 
-          <a href="<?= $url ?>" style="text-decoration:none;color:inherit;">
-            <img src="<?= $img ?>" alt="Photo bien">
-            <div class="catalogue-card-body">
-              <div class="catalogue-type">
-                <?= htmlspecialchars(trim($typeAff.' · '.$transAff)) ?>
-              </div>
-              <h3><?= htmlspecialchars($b['titre']) ?></h3>
+          <div class="catalogue-card-img-wrapper">
+            <a href="<?= htmlspecialchars($imgPath) ?>"
+               class="glightbox-bien"
+               data-gallery="bien-<?= (int)$b['id'] ?>"
+               data-title="<?= htmlspecialchars($b['titre']) ?>">
+              <img src="<?= htmlspecialchars($imgPath) ?>" alt="Photo bien">
+            </a>
+          </div>
 
-              <?php if(!empty($b['prix'])): ?>
-                <p class="catalogue-price">
-                  <?= number_format($b['prix'],0,',',' ') ?> FCFA
-                </p>
-              <?php endif; ?>
-
-              <p class="catalogue-location">
-                <?= htmlspecialchars(trim(($b['ville'] ?? '').' • '.($b['quartier'] ?? ''))) ?>
-              </p>
-
-              <p class="catalogue-meta">
-                <?php
-                  $surf = $b['superficie'] ?? ($b['superficie_habitable'] ?? '');
-                  if ($surf) {
-                      echo htmlspecialchars($surf).' · ';
-                  }
-                  if (!empty($b['chambres'])) {
-                      echo (int)$b['chambres'] . ' ch.';
-                  }
-                ?>
-              </p>
+          <div class="catalogue-card-body">
+            <div class="catalogue-type">
+              <?= htmlspecialchars(trim($typeAff.' · '.$transAff)) ?>
             </div>
-          </a>
+            <h3>
+              <a href="<?= $url ?>"><?= htmlspecialchars($b['titre']) ?></a>
+            </h3>
+
+            <?php if(!empty($b['prix'])): ?>
+              <p class="catalogue-price">
+                <?= number_format($b['prix'],0,',',' ') ?> FCFA
+              </p>
+            <?php endif; ?>
+
+            <p class="catalogue-location">
+              <?= htmlspecialchars(trim(($b['ville'] ?? '').' • '.($b['quartier'] ?? ''))) ?>
+            </p>
+
+            <p class="catalogue-meta">
+              <?php
+                $surf = $b['superficie'] ?? ($b['superficie_habitable'] ?? '');
+                if ($surf) {
+                    echo htmlspecialchars($surf).' · ';
+                }
+                if (!empty($b['chambres'])) {
+                    echo (int)$b['chambres'] . ' ch.';
+                }
+              ?>
+            </p>
+          </div>
 
           <div class="card-actions">
             <a class="whatsapp-btn" target="_blank"
@@ -730,7 +766,7 @@ function catalogue_build_query(array $extra = []): string {
 
   <!-- ================== CARTE (PRETE POUR GOOGLE MAPS) ================== -->
   <div class="catalogue-map-wrapper">
-    <h2 style="font-size:18px;font-weight:700;margin-bottom:8px;color:#003c96;">
+    <h2 style="font-size:18px;font-weight:700;margin-bottom:8px;color:#0A1628;">
       Voir les biens sur une carte
     </h2>
     <p style="font-size:13px;color:#6b7280;margin-bottom:10px;">
@@ -841,6 +877,22 @@ function initCatalogueMap(){
     map.fitBounds(bounds);
   }
 }
+</script>
+
+<!-- GLightbox JS -->
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  GLightbox({
+    selector: '.glightbox-bien',
+    loop: true,
+    zoomable: true,
+    touchNavigation: true,
+    draggable: true,
+    openEffect: 'fade',
+    slideEffect: 'fade'
+  });
+});
 </script>
 
 <!-- A ACTIVER QUAND TU AURAS TA CLÉ GOOGLE MAPS -->

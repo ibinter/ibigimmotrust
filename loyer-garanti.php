@@ -52,7 +52,7 @@ include __DIR__ . '/includes/header.php';
     <div class="cards-grid">
 
       <article class="card">
-        <h3>ð Loyer payé au plus tard le 10 du mois</h3>
+        <h3> Loyer payé au plus tard le 10 du mois</h3>
         <p>
           Un engagement contractuel : votre loyer vous est versé à date fixe,
           même si le locataire n’a pas encore payé.
@@ -60,7 +60,7 @@ include __DIR__ . '/includes/header.php';
       </article>
 
       <article class="card">
-        <h3>ð Contrat professionnel & clair</h3>
+        <h3> Contrat professionnel & clair</h3>
         <p>
           Tous les engagements (conditions, durée, montant, responsabilités)
           sont formalisés dans un contrat sécurisé.
@@ -68,7 +68,7 @@ include __DIR__ . '/includes/header.php';
       </article>
 
       <article class="card">
-        <h3>ð± Suivi digital & transparence</h3>
+        <h3> Suivi digital & transparence</h3>
         <p>
           Vous recevez un reporting régulier : paiements, maintenance, statut du locataire,
           dépenses, photos & vidéos lors des visites.
@@ -94,32 +94,32 @@ include __DIR__ . '/includes/header.php';
     <div class="cards-grid">
 
       <article class="card">
-        <h3>ð Recherche & sélection des locataires</h3>
+        <h3> Recherche & sélection des locataires</h3>
         <p>Vérification de solvabilité, dossiers analysés, visites organisées.</p>
       </article>
 
       <article class="card">
-        <h3>ðï¸ Signature du bail</h3>
+        <h3> Signature du bail</h3>
         <p>Contrat conforme, dépôt de garantie, état des lieux professionnel.</p>
       </article>
 
       <article class="card">
-        <h3>ð° Perception & sécurisation des loyers</h3>
+        <h3> Perception & sécurisation des loyers</h3>
         <p>Nous assurons le recouvrement, même en cas de retard.</p>
       </article>
 
       <article class="card">
-        <h3>ð ï¸ Maintenance & petites réparations</h3>
+        <h3> Maintenance & petites réparations</h3>
         <p>Interventions rapides pour préserver la qualité du bien.</p>
       </article>
 
       <article class="card">
-        <h3>ð¸ Reporting digital</h3>
+        <h3> Reporting digital</h3>
         <p>Photos, vidéos, rapports périodiques – idéal pour la diaspora.</p>
       </article>
 
       <article class="card">
-        <h3>ð Dossier complet du locataire</h3>
+        <h3> Dossier complet du locataire</h3>
         <p>Archivage et gestion administrative assurés.</p>
       </article>
 
@@ -137,18 +137,18 @@ include __DIR__ . '/includes/header.php';
 
     <div class="cards-grid">
       <article class="card">
-        <h3>ð¡ Propriétaires en Côte d’Ivoire</h3>
+        <h3> Propriétaires en Côte d’Ivoire</h3>
         <p>Pour sécuriser les loyers et éviter les soucis de gestion quotidienne.</p>
       </article>
 
       <article class="card">
-        <h3>ð Diaspora</h3>
+        <h3> Diaspora</h3>
         <p>Votre bien est géré entièrement depuis la Côte d’Ivoire,
            avec un suivi digital complet.</p>
       </article>
 
       <article class="card">
-        <h3>ð¼ Investisseurs</h3>
+        <h3> Investisseurs</h3>
         <p>Idéal pour ceux qui souhaitent un revenu locatif stable et prévisible.</p>
       </article>
     </div>

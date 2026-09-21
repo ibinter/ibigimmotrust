@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+# Bloquer les zones techniques
+Disallow: /admin/
+Disallow: /includes/
+Disallow: /uploads/temp/
+Disallow: /core/
+Disallow: /logs/
+
+# Autoriser explicitement les pages SEO
+Allow: /bien/
+Allow: /blog/
+Allow: /immobilier/
+
+# Sitemap principal
+Sitemap: https://ibigimmotrust.com/sitemap.xml

@@ -52,22 +52,22 @@ include __DIR__ . '/includes/header.php';
     <div class="cards-grid">
 
       <article class="card">
-        <h3>ð  Maisons individuelles</h3>
+        <h3> Maisons individuelles</h3>
         <p>Construction complète sur plans ou sur mesure (auto-construction possible).</p>
       </article>
 
       <article class="card">
-        <h3>ðï¸ Villas & duplex</h3>
+        <h3> Villas & duplex</h3>
         <p>Projets premium pour résidences principales ou à but locatif.</p>
       </article>
 
       <article class="card">
-        <h3>ð¢ Petits immeubles</h3>
+        <h3> Petits immeubles</h3>
         <p>R+1 à R+4, budget optimisé, circulation d’air, rentabilité locative renforcée.</p>
       </article>
 
       <article class="card">
-        <h3>ð¬ Locaux professionnels</h3>
+        <h3> Locaux professionnels</h3>
         <p>Bureaux, showrooms, petits commerces, boutiques.</p>
       </article>
 
@@ -86,32 +86,32 @@ include __DIR__ . '/includes/header.php';
     <div class="cards-grid">
 
       <article class="card">
-        <h3>ð Étude & plans</h3>
+        <h3> Étude & plans</h3>
         <p>Plans d’architecte, métrés, modèles 3D, optimisation du budget.</p>
       </article>
 
       <article class="card">
-        <h3>ð§± Construction durable</h3>
+        <h3> Construction durable</h3>
         <p>Qualité des matériaux, respect des normes techniques, artisans qualifiés.</p>
       </article>
 
       <article class="card">
-        <h3>ð Suivi & supervision</h3>
+        <h3> Suivi & supervision</h3>
         <p>Supervision régulière, contrôles techniques, validation des étapes.</p>
       </article>
 
       <article class="card">
-        <h3>ð¸ Reporting diaspora</h3>
+        <h3> Reporting diaspora</h3>
         <p>Photos + vidéos hebdomadaires, visites virtuelles, réunions de suivi.</p>
       </article>
 
       <article class="card">
-        <h3>ð Budget sécurisé</h3>
+        <h3> Budget sécurisé</h3>
         <p>Contrats clairs, étapes de paiement sécurisées, transparence totale.</p>
       </article>
 
       <article class="card">
-        <h3>ð§¹ Livraison clé en main</h3>
+        <h3> Livraison clé en main</h3>
         <p>Nettoyage, finitions, corrections, remise finale des clés.</p>
       </article>
 

@@ -52,22 +52,22 @@ include __DIR__ . '/includes/header.php';
     <div class="cards-grid">
 
       <article class="card">
-        <h3>ð Dossier complet</h3>
+        <h3> Dossier complet</h3>
         <p>Documents administratifs, terrain, revenus, budget travaux.</p>
       </article>
 
       <article class="card">
-        <h3>ð Capacité d’emprunt</h3>
+        <h3> Capacité d’emprunt</h3>
         <p>Analyse du revenu, stabilité financière, historique bancaire.</p>
       </article>
 
       <article class="card">
-        <h3>ð° Avance : 0 à 30 %</h3>
+        <h3> Avance : 0 à 30 %</h3>
         <p>Selon banque, garantie, apport personnel et type de projet.</p>
       </article>
 
       <article class="card">
-        <h3>â³ Durée : 5 à 15 ans</h3>
+        <h3> Durée : 5 à 15 ans</h3>
         <p>Crédit amortissable ou crédit construction selon profil.</p>
       </article>
 
@@ -86,32 +86,32 @@ include __DIR__ . '/includes/header.php';
     <div class="cards-grid">
 
       <article class="card">
-        <h3>ð Montage du dossier</h3>
+        <h3> Montage du dossier</h3>
         <p>Nous préparons tous les éléments exigés par la banque.</p>
       </article>
 
       <article class="card">
-        <h3>ð¤ Négociation & mise en relation</h3>
+        <h3> Négociation & mise en relation</h3>
         <p>Présentation du dossier à nos partenaires bancaires & microfinances.</p>
       </article>
 
       <article class="card">
-        <h3>ð Validation technique</h3>
+        <h3> Validation technique</h3>
         <p>Plans, métrés, devis, études nécessaires pour rassurer la banque.</p>
       </article>
 
       <article class="card">
-        <h3>ð Contrôle du budget</h3>
+        <h3> Contrôle du budget</h3>
         <p>Nous garantissons que le budget travaux est réaliste & cohérent.</p>
       </article>
 
       <article class="card">
-        <h3>ð§ Supervision des travaux</h3>
+        <h3> Supervision des travaux</h3>
         <p>Suivi technique complet jusqu’à la livraison, conforme aux normes.</p>
       </article>
 
       <article class="card">
-        <h3>ð¸ Reporting pour la diaspora</h3>
+        <h3> Reporting pour la diaspora</h3>
         <p>Photos, vidéos, rapports pour garder la banque et le client informés.</p>
       </article>
 
@@ -129,10 +129,10 @@ include __DIR__ . '/includes/header.php';
 
     <div class="cards-grid">
 
-      <article class="card"><h3>ð  Construction d’une maison</h3><p>Première acquisition, résidence principale ou locative.</p></article>
-      <article class="card"><h3>ð¢ Immeubles locatifs</h3><p>Projets à forte rentabilité locative, supervision IBIG.</p></article>
-      <article class="card"><h3>ðï¸ Reprise de chantiers inachevés</h3><p>Financement de la finition ou de la restructuration.</p></article>
-      <article class="card"><h3>ð ï¸ Rénovations importantes</h3><p>Valorisation avant location ou revente.</p></article>
+      <article class="card"><h3> Construction d’une maison</h3><p>Première acquisition, résidence principale ou locative.</p></article>
+      <article class="card"><h3> Immeubles locatifs</h3><p>Projets à forte rentabilité locative, supervision IBIG.</p></article>
+      <article class="card"><h3> Reprise de chantiers inachevés</h3><p>Financement de la finition ou de la restructuration.</p></article>
+      <article class="card"><h3> Rénovations importantes</h3><p>Valorisation avant location ou revente.</p></article>
 
     </div>
 

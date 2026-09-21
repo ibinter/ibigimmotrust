@@ -52,17 +52,17 @@ include __DIR__ . '/includes/header.php';
     <div class="cards-grid">
 
       <article class="card">
-        <h3>â Arrêt du chantier</h3>
+        <h3> Arrêt du chantier</h3>
         <p>Plus d’argent, artisans disparus, mauvaise gestion… Nous reprenons le contrôle.</p>
       </article>
 
       <article class="card">
-        <h3>ð§± Mauvaise qualité des travaux</h3>
+        <h3> Mauvaise qualité des travaux</h3>
         <p>IBIG réalise un diagnostic complet et propose des solutions correctives.</p>
       </article>
 
       <article class="card">
-        <h3>ð Dépassement de budget</h3>
+        <h3> Dépassement de budget</h3>
         <p>Nous restructurons le projet avec un budget clair, réaliste et contractuel.</p>
       </article>
 
@@ -81,7 +81,7 @@ include __DIR__ . '/includes/header.php';
     <div class="cards-grid">
 
       <article class="card">
-        <h3>ðï¸ Diagnostic technique complet</h3>
+        <h3> Diagnostic technique complet</h3>
         <p>
           Analyse de la structure, évaluation des dégâts, estimation des coûts,
           rapport avec recommandations.
@@ -89,14 +89,14 @@ include __DIR__ . '/includes/header.php';
       </article>
 
       <article class="card">
-        <h3>ð Nouvelle planification & devis</h3>
+        <h3> Nouvelle planification & devis</h3>
         <p>
           Devis détaillé, calendrier clair, priorisation des travaux et optimisation des coûts.
         </p>
       </article>
 
       <article class="card">
-        <h3>ð· Organisation des équipes</h3>
+        <h3> Organisation des équipes</h3>
         <p>
           Maçons, électriciens, plombiers, carreleurs, peintres : IBIG mobilise
           des équipes fiables & professionnelles.
@@ -104,21 +104,21 @@ include __DIR__ . '/includes/header.php';
       </article>
 
       <article class="card">
-        <h3>ð§° Exécution & supervision</h3>
+        <h3> Exécution & supervision</h3>
         <p>
           Suivi quotidien, approvisionnement contrôlé, inspection technique permanente.
         </p>
       </article>
 
       <article class="card">
-        <h3>ð¸ Reporting digital</h3>
+        <h3> Reporting digital</h3>
         <p>
           Photos, vidéos, rapports d’avancement : transparence totale, idéal pour la diaspora.
         </p>
       </article>
 
       <article class="card">
-        <h3>ð Livraison clé en main</h3>
+        <h3> Livraison clé en main</h3>
         <p>
           Le chantier est finalisé proprement, prêt pour l’habitation ou la location.
         </p>
@@ -139,22 +139,22 @@ include __DIR__ . '/includes/header.php';
     <div class="cards-grid">
 
       <article class="card">
-        <h3>ð  Maisons & villas</h3>
+        <h3> Maisons & villas</h3>
         <p>Du simple 2 pièces aux villas haut standing.</p>
       </article>
 
       <article class="card">
-        <h3>ð¢ Immeubles & résidences</h3>
+        <h3> Immeubles & résidences</h3>
         <p>Finition complète pour immeubles locatifs ou familiaux.</p>
       </article>
 
       <article class="card">
-        <h3>ð¬ Locaux commerciaux</h3>
+        <h3> Locaux commerciaux</h3>
         <p>Bureaux, magasins, entrepôts, ateliers.</p>
       </article>
 
       <article class="card">
-        <h3>ð§± Studios & logements locatifs</h3>
+        <h3> Studios & logements locatifs</h3>
         <p>Optimisation pour rentabilité rapide.</p>
       </article>
 

@@ -53,17 +53,17 @@ include __DIR__ . '/includes/header.php';
     <div class="cards-grid">
 
       <article class="card">
-        <h3>ð° Avance propriétaire : 0 FCFA</h3>
+        <h3> Avance propriétaire : 0 FCFA</h3>
         <p>Aucune sortie d’argent initiale. IBIG finance 100% des travaux éligibles.</p>
       </article>
 
-      <article class="card">
-        <h3>â³ Remboursement sur 3 à 7 ans</h3>
+      <article class="card">    
+      <h3> Remboursement sur 3 à 7 ans</h3>
         <p>Les loyers perçus servent à rembourser progressivement le financement IBIG.</p>
       </article>
 
       <article class="card">
-        <h3>ðï¸ Mise en location assurée</h3>
+        <h3> Mise en location assurée</h3>
         <p>
           IBIG prend en charge la location, les visites, la gestion locative
           et, selon le contrat, le loyer garanti.
@@ -88,22 +88,22 @@ include __DIR__ . '/includes/header.php';
     <div class="cards-grid">
 
       <article class="card">
-        <h3>ðï¸ Chantiers inachevés</h3>
+        <h3> Chantiers inachevés</h3>
         <p>Maisons, immeubles, studios, locaux professionnels.</p>
       </article>
 
       <article class="card">
-        <h3>ðï¸ Biens délabrés ou abandonnés</h3>
+        <h3> Biens délabrés ou abandonnés</h3>
         <p>Rénovation complète + mise en valeur marketing.</p>
       </article>
 
       <article class="card">
-        <h3>ð Projets diaspora bloqués</h3>
+        <h3> Projets diaspora bloqués</h3>
         <p>IBIG reprend le chantier et garantit un suivi digital complet.</p>
       </article>
 
       <article class="card">
-        <h3>ð  Petites constructions</h3>
+        <h3> Petites constructions</h3>
         <p>Studios, mini-villas, logements locatifs rapides à rentabiliser.</p>
       </article>
 
@@ -163,22 +163,22 @@ include __DIR__ . '/includes/header.php';
     <div class="cards-grid">
 
       <article class="card">
-        <h3>ð Démarrage rapide</h3>
+        <h3> Démarrage rapide</h3>
         <p>Les travaux commencent même si vous manquez de budget.</p>
       </article>
 
       <article class="card">
-        <h3>ð Aucun prêt bancaire nécessaire</h3>
+        <h3> Aucun prêt bancaire nécessaire</h3>
         <p>Pas de dossier bancaire, pas de taux, pas d'endettement.</p>
       </article>
 
       <article class="card">
-        <h3>ð± Suivi pour la diaspora</h3>
+        <h3> Suivi pour la diaspora</h3>
         <p>Reporting digital complet et transparence totale.</p>
       </article>
 
       <article class="card">
-        <h3>ð  Valorisation patrimoniale</h3>
+        <h3> Valorisation patrimoniale</h3>
         <p>Votre bien devient rentable et prend de la valeur immédiatement.</p>
       </article>
 

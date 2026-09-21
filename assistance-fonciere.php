@@ -54,7 +54,7 @@ include __DIR__ . '/includes/header.php';
     <div class="cards-grid">
 
       <article class="card">
-        <h3>ð§¾ Vérification des titres fonciers</h3>
+        <h3> Vérification des titres fonciers</h3>
         <p>
           Certificat foncier, ACD, titre foncier, attestation villageoise :
           IBIG vérifie l’authenticité et la conformité.
@@ -62,7 +62,7 @@ include __DIR__ . '/includes/header.php';
       </article>
 
       <article class="card">
-        <h3>âï¸ Analyse juridique</h3>
+        <h3> Analyse juridique</h3>
         <p>
           Contrats, actes notariés, historiques du terrain,
           risques de litiges ou de double vente.
@@ -70,7 +70,7 @@ include __DIR__ . '/includes/header.php';
       </article>
 
       <article class="card">
-        <h3>ðï¸ Validation auprès des autorités</h3>
+        <h3> Validation auprès des autorités</h3>
         <p>
           Sondage administratif, vérification au cadastre, conservation foncière,
           services techniques.
@@ -92,42 +92,42 @@ include __DIR__ . '/includes/header.php';
     <div class="cards-grid">
 
       <article class="card">
-        <h3>ð Vérification complète des documents</h3>
+        <h3> Vérification complète des documents</h3>
         <p>
           IBIG analyse tous vos documents fonciers et délivre un avis professionnel détaillé.
         </p>
       </article>
 
       <article class="card">
-        <h3>ð Historique du terrain</h3>
+        <h3> Historique du terrain</h3>
         <p>
           Recherche d’antécédents : anciens propriétaires, droits coutumiers, limites, litiges.
         </p>
       </article>
 
       <article class="card">
-        <h3>ð Visite & géolocalisation du terrain</h3>
+        <h3> Visite & géolocalisation du terrain</h3>
         <p>
           Vérification sur site : bornes, limites, occupation, accès, conformité avec les plans.
         </p>
       </article>
 
       <article class="card">
-        <h3>ð Assistance notariale</h3>
+        <h3> Assistance notariale</h3>
         <p>
           Préparation, signature et authentification des actes chez un notaire agréé.
         </p>
       </article>
 
       <article class="card">
-        <h3>ð¼ Accompagnement à l’achat</h3>
+        <h3> Accompagnement à l’achat</h3>
         <p>
           IBIG vous accompagne pour sécuriser la transaction et éviter les pièges courants.
         </p>
       </article>
 
       <article class="card">
-        <h3>ð Assistance diaspora</h3>
+        <h3> Assistance diaspora</h3>
         <p>
           Vérification et validation à distance, avec reporting digital complet.
         </p>
@@ -148,32 +148,32 @@ include __DIR__ . '/includes/header.php';
     <div class="cards-grid">
 
       <article class="card">
-        <h3>ð Certificat foncier</h3>
+        <h3> Certificat foncier</h3>
         <p>Authenticité, limites, historique et conformité.</p>
       </article>
 
       <article class="card">
-        <h3>ð ACD (Arrêté de Concession Définitive)</h3>
+        <h3> ACD (Arrêté de Concession Définitive)</h3>
         <p>Analyse juridique et confirmation auprès des services techniques.</p>
       </article>
 
       <article class="card">
-        <h3>ð Titre foncier</h3>
+        <h3> Titre foncier</h3>
         <p>Vérification auprès de la conservation foncière.</p>
       </article>
 
       <article class="card">
-        <h3>ð Attestation villageoise</h3>
+        <h3> Attestation villageoise</h3>
         <p>Confirmation du chef, cohérence des limites, absence de litige coutumier.</p>
       </article>
 
       <article class="card">
-        <h3>ð Plans topographiques</h3>
+        <h3> Plans topographiques</h3>
         <p>Bornage, géolocalisation, conformité et limites.</p>
       </article>
 
       <article class="card">
-        <h3>ðï¸ Actes notariés</h3>
+        <h3> Actes notariés</h3>
         <p>Contrats, procurations, mandats, certificats d’authenticité.</p>
       </article>
 

@@ -52,12 +52,12 @@ include __DIR__ . '/includes/header.php';
     <div class="cards-grid">
 
       <article class="card">
-        <h3>ð Augmentation de valeur</h3>
+        <h3> Augmentation de valeur</h3>
         <p>Modernisation, optimisation des espaces, finitions professionnelles.</p>
       </article>
 
       <article class="card">
-        <h3>ð° Rentabilité locative</h3>
+        <h3> Rentabilité locative</h3>
         <p>
           Un bien rénové se loue plus vite, plus cher et avec moins de risques
           d’impayés.
@@ -65,7 +65,7 @@ include __DIR__ . '/includes/header.php';
       </article>
 
       <article class="card">
-        <h3>ð§ Correction des défauts</h3>
+        <h3> Correction des défauts</h3>
         <p>
           Infiltrations, fissures, électricité, plomberie, isolation :
           nous corrigeons tout.
@@ -87,12 +87,12 @@ include __DIR__ . '/includes/header.php';
     <div class="cards-grid">
 
       <article class="card">
-        <h3>ðï¸ Rénovation complète</h3>
+        <h3> Rénovation complète</h3>
         <p>Nous reprenons entièrement le bien : murs, sols, plafonds, réseaux, peinture.</p>
       </article>
 
       <article class="card">
-        <h3>ð ï¸ Rénovation technique</h3>
+        <h3> Rénovation technique</h3>
         <p>
           Électricité, plomberie, maçonnerie, étanchéité, menuiserie,
           façades, sanitaires.
@@ -100,7 +100,7 @@ include __DIR__ . '/includes/header.php';
       </article>
 
       <article class="card">
-        <h3>ð¨ Décoration & design intérieur</h3>
+        <h3> Décoration & design intérieur</h3>
         <p>
           Modernisation esthétique : peinture, carrelage, faux plafonds,
           éclairage, ameublement.
@@ -108,19 +108,19 @@ include __DIR__ . '/includes/header.php';
       </article>
 
       <article class="card">
-        <h3>ð  Rénovation de pièces spécifiques</h3>
+        <h3> Rénovation de pièces spécifiques</h3>
         <p>
           Cuisines, salles de bains, salons, chambres, bureaux, boutiques.
         </p>
       </article>
 
       <article class="card">
-        <h3>ð¸ Mise en valeur marketing</h3>
+        <h3> Mise en valeur marketing</h3>
         <p>Photos professionnelles & home staging pour revente ou location.</p>
       </article>
 
       <article class="card">
-        <h3>ð Suivi pour la diaspora</h3>
+        <h3> Suivi pour la diaspora</h3>
         <p>Photos, vidéos, rapports réguliers : transparence totale.</p>
       </article>
 
@@ -139,22 +139,22 @@ include __DIR__ . '/includes/header.php';
     <div class="cards-grid">
 
       <article class="card">
-        <h3>ð  Maisons & villas</h3>
+        <h3> Maisons & villas</h3>
         <p>Modernisation complète, valorisation et optimisation des volumes.</p>
       </article>
 
       <article class="card">
-        <h3>ð¢ Immeubles</h3>
+        <h3> Immeubles</h3>
         <p>Rénovation des appartements, espaces communs, façades, toitures.</p>
       </article>
 
       <article class="card">
-        <h3>ð¬ Locaux commerciaux</h3>
+        <h3> Locaux commerciaux</h3>
         <p>Boutiques, bureaux, entrepôts, showrooms.</p>
       </article>
 
       <article class="card">
-        <h3>ðï¸ Studios & résidences meublées</h3>
+        <h3> Studios & résidences meublées</h3>
         <p>
           Rénovation rapide et modernisation pour maximiser la rentabilité
           locative.

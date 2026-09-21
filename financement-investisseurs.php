@@ -52,21 +52,21 @@ include __DIR__ . '/includes/header.php';
     <div class="cards-grid">
 
       <article class="card">
-        <h3>ð¼ Apport propriétaire : 10 à 20%</h3>
+        <h3> Apport propriétaire : 10 à 20%</h3>
         <p>
           Selon l’étude technique, financière et la valeur future du bien.
         </p>
       </article>
 
       <article class="card">
-        <h3>ð° Financement partiel ou total</h3>
+        <h3> Financement partiel ou total</h3>
         <p>
           L’investisseur complète le montant nécessaire pour finaliser le projet.
         </p>
       </article>
 
       <article class="card">
-        <h3>ð Contrat tripartite sécurisé</h3>
+        <h3> Contrat tripartite sécurisé</h3>
         <p>
           Accord entre <strong>Propriétaire – IBIG IMMO TRUST – Investisseur</strong>.
         </p>
@@ -87,22 +87,22 @@ include __DIR__ . '/includes/header.php';
     <div class="cards-grid">
 
       <article class="card">
-        <h3>ðï¸ Finition de chantier</h3>
+        <h3> Finition de chantier</h3>
         <p>Idéal pour les chantiers abandonnés nécessitant un financement rapide.</p>
       </article>
 
       <article class="card">
-        <h3>ð  Construction neuve</h3>
+        <h3> Construction neuve</h3>
         <p>Villas, immeubles, logements locatifs ou familiaux.</p>
       </article>
 
       <article class="card">
-        <h3>ðï¸ Rénovation complète</h3>
+        <h3> Rénovation complète</h3>
         <p>Pour augmenter immédiatement la valeur du bien.</p>
       </article>
 
       <article class="card">
-        <h3>ð Projets diaspora</h3>
+        <h3> Projets diaspora</h3>
         <p>Facilité de financement avec reporting digital complet.</p>
       </article>
 
@@ -183,34 +183,34 @@ include __DIR__ . '/includes/header.php';
     <div class="cards-grid">
 
       <article class="card">
-        <h3>ð Démarrage rapide</h3>
+        <h3> Démarrage rapide</h3>
         <p>Une solution plus rapide que le crédit bancaire traditionnel.</p>
       </article>
 
       <article class="card">
-        <h3>ð Risque partagé</h3>
+        <h3> Risque partagé</h3>
         <p>Propriétaire, IBIG et investisseur partagent responsabilités & suivi.</p>
       </article>
 
       <article class="card">
-        <h3>ð¼ Contrat professionnel</h3>
+        <h3> Contrat professionnel</h3>
         <p>Cadrage clair : pas de mauvaise surprise.</p>
       </article>
 
       <article class="card">
-        <h3>ð± Suivi digital</h3>
+        <h3> Suivi digital</h3>
         <p>Rapports réguliers sur l’avancement et les flux financiers.</p>
       </article>
 
       <article class="card">
-        <h3>ð Rendement garanti</h3>
+        <h3> Rendement garanti</h3>
         <p>
           Le projet devient rapidement rentable grâce à la mise en location.
         </p>
       </article>
 
       <article class="card">
-        <h3>ð Solution diaspora</h3>
+        <h3> Solution diaspora</h3>
         <p>
           Une solution simple, transparente et pilotée à distance.
         </p>

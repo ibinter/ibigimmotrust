@@ -51,22 +51,22 @@ include __DIR__ . '/includes/header.php';
     <div class="cards-grid">
 
       <article class="card">
-        <h3>ð° Avance demandée : 10 à 20 %</h3>
+        <h3> Avance demandée : 10 à 20 %</h3>
         <p>Le reste du financement est apporté par les investisseurs.</p>
       </article>
 
       <article class="card">
-        <h3>ð Durée : 3 à 5 ans</h3>
+        <h3> Durée : 3 à 5 ans</h3>
         <p>Remboursements à partir des loyers ou d’un plan adapté.</p>
       </article>
 
       <article class="card">
-        <h3>ð Rentabilité exigée</h3>
+        <h3> Rentabilité exigée</h3>
         <p>Projets à fort potentiel locatif ou valeur marchande élevée.</p>
       </article>
 
       <article class="card">
-        <h3>ð Contrat tripartite</h3>
+        <h3> Contrat tripartite</h3>
         <p>Propriétaire — Investisseur — IBIG pour un maximum de sécurité.</p>
       </article>
 
@@ -84,10 +84,10 @@ include __DIR__ . '/includes/header.php';
 
     <div class="cards-grid">
 
-      <article class="card"><h3>ð  Construction de maison</h3><p>Résidence personnelle ou mise en location.</p></article>
-      <article class="card"><h3>ð¢ Petits immeubles</h3><p>Investissement à forte rentabilité locative.</p></article>
-      <article class="card"><h3>ðï¸ Chantiers inachevés</h3><p>Reprise complète ou finition accélérée.</p></article>
-      <article class="card"><h3>ð ï¸ Rénovations lourdes</h3><p>Valorisation avant revente ou location.</p></article>
+      <article class="card"><h3> Construction de maison</h3><p>Résidence personnelle ou mise en location.</p></article>
+      <article class="card"><h3> Petits immeubles</h3><p>Investissement à forte rentabilité locative.</p></article>
+      <article class="card"><h3> Chantiers inachevés</h3><p>Reprise complète ou finition accélérée.</p></article>
+      <article class="card"><h3> Rénovations lourdes</h3><p>Valorisation avant revente ou location.</p></article>
 
     </div>
 

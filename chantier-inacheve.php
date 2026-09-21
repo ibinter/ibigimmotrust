@@ -1,8 +1,9 @@
 <?php
 require_once __DIR__ . '/includes/config.php';
 include __DIR__ . '/includes/tracker.php';
-$currentPage = 'btp';
-$pageTitle   = "Chantiers inachevés – IBIG IMMO TRUST";
+
+$currentPage = 'chantier-inacheve';
+$pageTitle   = "Chantiers inachevés – Reprise & Livraison clé en main – IBIG IMMO TRUST";
 include __DIR__ . '/includes/header.php';
 ?>
 
@@ -11,28 +12,33 @@ include __DIR__ . '/includes/header.php';
   <div class="container hero-grid">
 
     <div>
-      <p class="hero-kicker">BTP • Finition • Supervision • Rattrapage</p>
+      <p class="hero-kicker">Reprise • Finition • Correction de malfaçons • Assistance</p>
 
       <h1 class="hero-title">
-        Reprise & finition de chantiers inachevés.  
-        Livraison sécurisée, rapide & professionnelle.
+        Votre chantier est bloqué ? Nous le reprenons et le livrons clé en main.
       </h1>
 
       <p class="hero-subtitle">
-        Votre chantier a été abandonné, mal réalisé ou bloqué ?  
-        IBIG IMMO TRUST reprend votre projet, sécurise la vision initiale
-        et assure une livraison clé en main avec supervision complète.
+        Mauvaises équipes, abandon, dépassement de budget, malfaçons...  
+        IBIG IMMO TRUST intervient pour diagnostiquer, corriger et achever votre chantier
+        en garantissant transparence, contrôle qualité et reporting complet.
       </p>
 
       <div class="hero-cta">
         <a href="contact.php" class="btn-primary">Décrire mon chantier</a>
-        <a href="rdv.php" class="btn-secondary">Prendre rendez-vous</a>
+        <a href="rdv.php" class="btn-secondary">Prendre RDV technique</a>
+      </div>
+
+      <div class="hero-badges">
+        <span> Diagnostic technique</span>
+        <span> Correction des malfaçons</span>
+        <span> Finition & livraison</span>
       </div>
     </div>
 
     <div class="hero-image">
       <div class="hero-img-main">
-        <img src="assets/img/chantier-inacheve.jpg" alt="Chantiers inachevés IBIG IMMO TRUST">
+        <img src="assets/img/chantier-inacheve.jpg" alt="Chantier inachevé – IBIG IMMO TRUST">
       </div>
     </div>
 
@@ -40,56 +46,45 @@ include __DIR__ . '/includes/header.php';
 </section>
 
 
-<!-- ===================== SECTION 1 ===================== -->
+
+<!-- ===================== POURQUOI CHANTIER BLOQUÉ ? ===================== -->
 <section class="section">
   <div class="container">
 
-    <h2 class="section-title">Reprendre un chantier inachevé : notre expertise</h2>
+    <h2 class="section-title">Pourquoi votre chantier est-il bloqué ?</h2>
+
     <p class="section-intro">
-      IBIG IMMO TRUST se charge du diagnostic technique, du rattrapage des erreurs,
-      de la planification, de la gestion des artisans et de la supervision complète.
+      8 chantiers sur 10 connaissent des interruptions dues à des problèmes d'équipe,
+      de budget, de malfaçons ou de mauvaise gestion. Voici les causes les plus fréquentes.
     </p>
 
     <div class="cards-grid">
 
       <article class="card">
-        <h3>ð Diagnostic complet</h3>
-        <p>État des lieux, défauts, malfaçons, estimation des travaux restants.</p>
-      </article>
-
-      <article class="card">
-        <h3>ð§± Correction & reprise</h3>
+        <h3>Abandon des artisans</h3>
         <p>
-          Reprise de maçonnerie, électricité, plomberie, charpente, étanchéité
-          et finitions.
+          Ouvriers non professionnels, non-payés, retardataires ou qui disparaissent en cours de route…
         </p>
       </article>
 
       <article class="card">
-        <h3>ð ï¸ Organisation des corps de métiers</h3>
+        <h3>Manque de supervision</h3>
         <p>
-          Coordination des artisans qualifiés et suivi rigoureux du chantier.
+          Travaux non contrôlés, absence de suivi technique, erreurs graves dans l'exécution.
         </p>
       </article>
 
       <article class="card">
-        <h3>ð¸ Reporting digital diaspora</h3>
+        <h3>Malfaçons & reprises</h3>
         <p>
-          Photos, vidéos, visites virtuelles et comptes-rendus techniques.
+          Mauvaises fondations, murs non alignés, matériaux de mauvaise qualité, finitions ratées.
         </p>
       </article>
 
       <article class="card">
-        <h3>ð§ Planification & calendrier</h3>
+        <h3>Dépassements de budget</h3>
         <p>
-          Planning clair, étapes validées et supervision hebdomadaire.
-        </p>
-      </article>
-
-      <article class="card">
-        <h3>ð Livraison sécurisée</h3>
-        <p>
-          Contrôle qualité, corrections finales, nettoyage et remise des clés.
+          Mauvaise estimation, achats non contrôlés, dépenses abusives.
         </p>
       </article>
 
@@ -100,60 +95,190 @@ include __DIR__ . '/includes/header.php';
 
 
 
-<!-- ===================== SECTION 2 ===================== -->
+<!-- ===================== NOTRE INTERVENTION ===================== -->
 <section class="section section-alt">
   <div class="container">
 
-    <h2 class="section-title">Pour quels types de chantiers ?</h2>
+    <h2 class="section-title">Comment IBIG IMMO TRUST reprend votre chantier</h2>
 
-    <div class="cards-grid">
+    <p class="section-intro">
+      Nous avons un processus rigoureux pour sécuriser la reprise et finaliser votre chantier
+      dans de bonnes conditions.
+    </p>
 
-      <article class="card"><h3>ð  Maisons individuelles</h3><p>Rattrapage complet ou finitions finales.</p></article>
-      <article class="card"><h3>ð¢ Immeubles</h3><p>Travaux structurels ou finitions des appartements.</p></article>
-      <article class="card"><h3>ð¬ Locaux commerciaux</h3><p>Reprise et mise aux normes techniques.</p></article>
-      <article class="card"><h3>ðï¸ Résidences meublées</h3><p>Finitions, déco, installations électriques & plomberie.</p></article>
-
-    </div>
-
-  </div>
-</section>
-
-
-<!-- ===================== SECTION 3 ===================== -->
-<section class="section">
-  <div class="container">
-    
-    <h2 class="section-title">Notre processus de reprise</h2>
     <div class="steps-grid">
 
       <article class="step">
         <div class="step-number">1</div>
-        <h3>Visite & diagnostic</h3>
-        <p>État réel du chantier, malfaçons, travaux restants, budget.</p>
+        <h3>Diagnostic complet</h3>
+        <p>
+          Analyse de l’existant, contrôle structurel, évaluation des erreurs
+          et estimation réelle des travaux restants.
+        </p>
       </article>
 
       <article class="step">
         <div class="step-number">2</div>
-        <h3>Devis & contrat</h3>
-        <p>Proposition détaillée, calendrier, responsabilités & garanties.</p>
+        <h3>Devis & planification</h3>
+        <p>
+          Reprise détaillée, priorités, budget à respecter et calendrier structuré.
+        </p>
       </article>
 
       <article class="step">
         <div class="step-number">3</div>
-        <h3>Démarrage & contrôle</h3>
-        <p>Supervision IBIG, coordination & contrôles techniques.</p>
+        <h3>Correction des malfaçons</h3>
+        <p>
+          Démolition sélective si nécessaire, renforcement structurel et remises aux normes.
+        </p>
       </article>
 
       <article class="step">
         <div class="step-number">4</div>
-        <h3>Finitions & livraison</h3>
-        <p>Corrections, peinture, installations, nettoyage final.</p>
+        <h3>Reprise & finition complète</h3>
+        <p>
+          Construction, plomberie, électricité, carrelage, peinture, menuiserie,
+          plafonds, sanitaires… tout jusqu’à la livraison.
+        </p>
+      </article>
+
+      <article class="step">
+        <div class="step-number">5</div>
+        <h3>Livraison & garantie</h3>
+        <p>
+          Contrôle qualité final + remise des clés + assistance post-livraison.
+        </p>
       </article>
 
     </div>
 
   </div>
 </section>
+
+
+
+<!-- ===================== CE QUE NOUS CORRIGEONS LE PLUS ===================== -->
+<section class="section">
+  <div class="container">
+
+    <h2 class="section-title">Ce que nous corrigeons le plus souvent</h2>
+
+    <p class="section-intro">
+      Nous avons l'habitude de reprendre tous types de problèmes rencontrés sur les chantiers abandonnés.
+    </p>
+
+    <div class="cards-grid">
+
+      <article class="card">
+        <h3>Fondations & dalles mal exécutées</h3>
+        <p>Renforcement, reprise des défauts, correction des niveaux.</p>
+      </article>
+
+      <article class="card">
+        <h3>Murs fissurés ou mal alignés</h3>
+        <p>Reconstruction partielle, alignements, redressement, chaînages.</p>
+      </article>
+
+      <article class="card">
+        <h3>Plomberie & électricité mal installées</h3>
+        <p>Reprise complète des réseaux pour conformité et sécurité.</p>
+      </article>
+
+      <article class="card">
+        <h3>Finitions catastrophiques</h3>
+        <p>Peinture, carrelage, portes, plafonds, dalles, salles d’eau…</p>
+      </article>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- ===================== GARANTIES ===================== -->
+<section class="section section-alt">
+  <div class="container">
+
+    <h2 class="section-title">Nos garanties & engagements</h2>
+
+    <div class="cards-grid">
+
+      <article class="card">
+        <h3>Diagnostic honnête & transparent</h3>
+        <p>On vous dit clairement ce qui est bon, ce qui est à refaire, et ce qui est risqué.</p>
+      </article>
+
+      <article class="card">
+        <h3>Finitions professionnelles</h3>
+        <p>Livraison impeccable : alignements, niveaux, matériaux conformes.</p>
+      </article>
+
+      <article class="card">
+        <h3>Reporting diaspora</h3>
+        <p>Photos, vidéos, comptes-rendus, réunions en visio, suivi en temps réel.</p>
+      </article>
+
+      <article class="card">
+        <h3>Contrôle qualité final</h3>
+        <p>Inspection technique complète avant la remise des clés.</p>
+      </article>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- ===================== FAQ ===================== -->
+<section class="section">
+  <div class="container">
+
+    <h2 class="section-title">FAQ – Chantiers inachevés</h2>
+
+    <div style="max-width:900px;margin:0 auto;display:flex;flex-direction:column;gap:10px;">
+
+      <details class="faq-item" open>
+        <summary><strong>Mon chantier est à l’intérieur du pays, pouvez-vous intervenir ?</strong></summary>
+        <p>
+          Oui, selon l’importance du chantier. Indiquez la localisation et nous évaluons la faisabilité.
+        </p>
+      </details>
+
+      <details class="faq-item">
+        <summary><strong>Vous reprenez même si le chantier est très mal réalisé ?</strong></summary>
+        <p>
+          Oui, mais cela commence toujours par un diagnostic technique complet.
+        </p>
+      </details>
+
+      <details class="faq-item">
+        <summary><strong>Pouvez-vous travailler avec mes propres artisans ?</strong></summary>
+        <p>
+          Oui : dans ce cas, nous faisons la supervision, le contrôle qualité et la validation technique.
+        </p>
+      </details>
+
+      <details class="faq-item">
+        <summary><strong>Quels documents dois-je fournir ?</strong></summary>
+        <p>
+          Photos du chantier, localisation, plans (si disponibles), budget approximatif.
+        </p>
+      </details>
+
+      <details class="faq-item">
+        <summary><strong>Comment garantissez-vous le respect du budget ?</strong></summary>
+        <p>
+          Nous établissons un devis précis, validons les achats, et contrôlons la progression avant chaque étape de paiement.
+        </p>
+      </details>
+
+    </div>
+
+  </div>
+</section>
+
 
 
 <!-- ===================== CTA ===================== -->
@@ -161,8 +286,8 @@ include __DIR__ . '/includes/header.php';
   <div class="container cta-inner">
 
     <div>
-      <h2>Votre chantier est bloqué ou inachevé ?</h2>
-      <p>Obtenez un diagnostic complet et un plan de reprise en 48h.</p>
+      <h2>Votre chantier est bloqué ? Reprenez le contrôle dès aujourd’hui.</h2>
+      <p>Nos experts techniques analysent et débloquent votre projet sous 48h.</p>
     </div>
 
     <a href="contact.php" class="btn-primary btn-large">Décrire mon chantier</a>
