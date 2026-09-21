@@ -108,6 +108,15 @@ body {
 a { text-decoration: none; color: inherit; }
 img { max-width: 100%; display: block; }
 
+/* ── Espacement global des titres et paragraphes ── */
+h1, h2, h3, h4 {
+  line-height: 1.25;
+  margin-bottom: 0.65em;
+}
+p { line-height: 1.7; margin-bottom: 1em; }
+p:last-child { margin-bottom: 0; }
+h2 + p, h3 + p { margin-top: 0; }
+
 /* ============================================================
    ANNOUNCEMENT STRIP
 ============================================================ */
