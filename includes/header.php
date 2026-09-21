@@ -118,33 +118,53 @@ p:last-child { margin-bottom: 0; }
 h2 + p, h3 + p { margin-top: 0; }
 
 /* ============================================================
-   ANNOUNCEMENT STRIP
+   ANNOUNCEMENT STRIP — TICKER DÉFILANT
 ============================================================ */
 .announcement-strip {
   background: linear-gradient(90deg, var(--navy-deep) 0%, var(--navy-mid) 50%, var(--navy-deep) 100%);
   padding: 9px 0;
-  text-align: center;
   border-bottom: 1px solid rgba(212,175,55,0.2);
   overflow: hidden;
+  /* fondu sur les bords */
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 6%, #000 94%, transparent 100%);
+  mask-image: linear-gradient(90deg, transparent 0%, #000 6%, #000 94%, transparent 100%);
 }
 
-.strip-inner {
+.strip-track {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 8px;
-  font-size: 12.5px;
-  font-weight: 600;
-  color: rgba(255,255,255,0.8);
-  letter-spacing: 0.03em;
+  gap: 0;
+  white-space: nowrap;
+  animation: strip-scroll 28s linear infinite;
+  width: max-content;
 }
 
-.strip-inner .gold { color: var(--gold); }
-.strip-sep {
+.strip-track:hover { animation-play-state: paused; }
+
+@keyframes strip-scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.strip-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 28px;
+  font-size: 12.5px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.strip-item .gold { color: var(--gold); }
+.strip-item .sep {
   width: 4px; height: 4px;
   background: var(--gold);
   border-radius: 50%;
-  opacity: 0.5;
+  opacity: 0.6;
+  flex-shrink: 0;
 }
 
 /* ============================================================
@@ -885,28 +905,55 @@ h2 + p, h3 + p { margin-top: 0; }
   .hero-actions { flex-direction: column; }
   .hero-btn { justify-content: center; }
   .hero-prev, .hero-next { display: none; }
-  .announcement-strip .strip-inner span:not(.gold) { display: none; }
+  .announcement-strip { display: none; }
 }
 </style>
 </head>
 <body>
 
-<!-- ANNOUNCEMENT STRIP -->
+<!-- ANNOUNCEMENT STRIP — TICKER -->
 <div class="announcement-strip">
-  <div class="strip-inner">
-    <span class="gold"><i class="fa-solid fa-star"></i></span>
-    <span>IBIG IMMO TRUST</span>
-    <span class="strip-sep"></span>
-    <span>Immobilier</span>
-    <span class="strip-sep"></span>
-    <span>BTP</span>
-    <span class="strip-sep"></span>
-    <span>Financement</span>
-    <span class="strip-sep"></span>
-    <span>Gestion Locative</span>
-    <span class="strip-sep"></span>
-    <span class="gold">Côte d'Ivoire · Diaspora</span>
-    <span class="gold"><i class="fa-solid fa-star"></i></span>
+  <div class="strip-track" aria-hidden="true">
+    <?php
+    $stripItems = [
+      ['icon'=>'fa-solid fa-star gold', 'text'=>'IBIG IMMO TRUST'],
+      ['sep'=>true],
+      ['text'=>'Immobilier'],
+      ['sep'=>true],
+      ['text'=>'BTP &amp; Construction'],
+      ['sep'=>true],
+      ['text'=>'Financement'],
+      ['sep'=>true],
+      ['text'=>'Gestion Locative'],
+      ['sep'=>true],
+      ['icon'=>'fa-solid fa-location-dot gold', 'text'=>"Côte d'Ivoire"],
+      ['sep'=>true],
+      ['text'=>'Diaspora'],
+      ['sep'=>true],
+      ['text'=>'Assistance foncière'],
+      ['sep'=>true],
+      ['icon'=>'fa-solid fa-shield-halved gold', 'text'=>'Loyer garanti'],
+      ['sep'=>true],
+      ['text'=>'Investissement sécurisé'],
+      ['sep'=>true],
+      ['icon'=>'fa-solid fa-star gold', 'text'=>'IBIG IMMO TRUST'],
+    ];
+    // Render twice for seamless loop
+    for ($r = 0; $r < 2; $r++):
+      foreach ($stripItems as $it):
+        if (!empty($it['sep'])): ?>
+          <span class="strip-item"><span class="sep"></span></span>
+        <?php else: ?>
+          <span class="strip-item">
+            <?php if (!empty($it['icon'])): ?>
+              <i class="<?= $it['icon'] ?>"></i>
+            <?php endif; ?>
+            <?= $it['text'] ?>
+          </span>
+        <?php endif;
+      endforeach;
+    endfor;
+    ?>
   </div>
 </div>
 
