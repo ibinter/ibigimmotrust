@@ -833,7 +833,7 @@ button,input,select,textarea{font:inherit}
 
     <div class="hero-visual">
       <div class="hero-visual-main">
-        <img src="/assets/img/diaspora-investissement.jpg" alt="Offre diaspora IBIG IMMO TRUST">
+        <img src="/assets/img/investisseurs-afrique.jpg" alt="Offre diaspora IBIG IMMO TRUST">
       </div>
 
       <div class="hero-float top">
@@ -888,7 +888,7 @@ button,input,select,textarea{font:inherit}
   <div class="container split-grid">
 
     <div class="visual-card">
-      <img src="/assets/img/projet1.jpg" alt="Projet immobilier piloté pour la diaspora">
+      <img src="/assets/img/construction-afrique.jpg" alt="Projet immobilier piloté pour la diaspora">
       <div class="visual-overlay">
         <h3>Une offre spéciale pour la diaspora</h3>
         <p>
