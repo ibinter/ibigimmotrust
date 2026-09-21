@@ -1,6 +1,6 @@
 /* ============================================================
    IBIG IMMO TRUST - FRONT CSS LUXE
-   Thème : Bleu Marine #0A1628 | Or #D4AF37
+   Thème : Bleu Marine #1B4FD8 | Or #E8282A
    Version 3.0 Premium
 ============================================================ */
 
@@ -10,14 +10,14 @@ html, body {
 }
 
 :root {
-  --navy:        #0A1628;
+  --navy:        #1B4FD8;
   --navy-deep:   #060d1a;
   --navy-mid:    #0f2044;
   --navy-light:  #1a3060;
-  --gold:        #D4AF37;
-  --gold-light:  #E8CC6A;
-  --gold-dark:   #A68920;
-  --blue:        #0A1628;
+  --gold:        #E8282A;
+  --gold-light:  #FF5557;
+  --gold-dark:   #C01A1C;
+  --blue:        #1B4FD8;
   --blue-dark:   #060d1a;
   --white:       #ffffff;
   --cream:       #FAF7F0;
@@ -26,8 +26,8 @@ html, body {
   --muted:       #6B7280;
   --radius:      14px;
   --radius-sm:   8px;
-  --shadow:      0 8px 32px rgba(10,22,40,0.12);
-  --shadow-light:0 2px 8px rgba(10,22,40,0.08);
+  --shadow:      0 8px 32px rgba(27,79,216,0.12);
+  --shadow-light:0 2px 8px rgba(27,79,216,0.08);
 }
 
 body {
@@ -93,7 +93,7 @@ h1, h2, h3 {
   border-radius: var(--radius);
   padding: 24px;
   box-shadow: var(--shadow-light);
-  border: 1px solid rgba(10,22,40,0.06);
+  border: 1px solid rgba(27,79,216,0.06);
   transition: all 0.3s cubic-bezier(0.4,0,0.2,1);
 }
 
@@ -102,7 +102,7 @@ h1, h2, h3 {
 .step:hover {
   transform: translateY(-4px);
   box-shadow: var(--shadow);
-  border-color: rgba(212,175,55,0.2);
+  border-color: rgba(232,40,42,0.2);
 }
 
 /* Images */
@@ -165,11 +165,11 @@ h1, h2, h3 {
 .btn-primary {
   background: linear-gradient(135deg, var(--gold), var(--gold-dark));
   color: var(--navy);
-  box-shadow: 0 4px 15px rgba(212,175,55,0.3);
+  box-shadow: 0 4px 15px rgba(232,40,42,0.3);
 }
 
 .btn-primary:hover {
-  box-shadow: 0 8px 25px rgba(212,175,55,0.5);
+  box-shadow: 0 8px 25px rgba(232,40,42,0.5);
   transform: translateY(-2px);
 }
 
@@ -181,7 +181,7 @@ h1, h2, h3 {
 
 .btn-secondary:hover {
   background: var(--navy-light);
-  box-shadow: 0 8px 25px rgba(10,22,40,0.25);
+  box-shadow: 0 8px 25px rgba(27,79,216,0.25);
   transform: translateY(-2px);
 }
 
@@ -277,7 +277,7 @@ h1, h2, h3 {
   right: -10%;
   width: 500px; height: 500px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(212,175,55,0.08) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(232,40,42,0.08) 0%, transparent 70%);
 }
 
 .cta-inner {
@@ -327,7 +327,7 @@ h1, h2, h3 {
 .badge-exclusif {
   background: var(--navy-mid);
   color: var(--gold);
-  border: 1px solid rgba(212,175,55,0.3);
+  border: 1px solid rgba(232,40,42,0.3);
 }
 
 /* --------------------- PRIX --------------------- */
@@ -379,7 +379,7 @@ h1, h2, h3 {
 .form-group select:focus,
 .form-group textarea:focus {
   border-color: var(--gold-dark);
-  box-shadow: 0 0 0 3px rgba(212,175,55,0.12);
+  box-shadow: 0 0 0 3px rgba(232,40,42,0.12);
 }
 
 .form-group textarea { min-height: 120px; resize: vertical; }
@@ -405,7 +405,7 @@ h1, h2, h3 {
   font-size: 13px;
   font-weight: 600;
   color: var(--navy);
-  border: 1.5px solid rgba(10,22,40,0.12);
+  border: 1.5px solid rgba(27,79,216,0.12);
   text-decoration: none;
   transition: all 0.25s ease;
 }

@@ -176,7 +176,7 @@ include __DIR__ . '/includes/header.php';
   --fin-blue:#1B4FD8;
   --fin-blue-dark:#092a65;
   --fin-red:#E8282A;
-  --fin-gold:#f4bc49;
+  --fin-gold:#E8282A;
   --fin-ink:#101828;
   --fin-ink-soft:#1d2939;
   --fin-muted:#667085;
@@ -353,7 +353,7 @@ include __DIR__ . '/includes/header.php';
 }
 
 .fin-button {
-  background:linear-gradient(135deg, var(--fin-gold) 0%, #ffd878 100%);
+  background:linear-gradient(135deg, var(--fin-gold) 0%, #FF5557 100%);
   color:#2b1900;
   box-shadow:0 16px 36px rgba(244,188,73,.24);
 }
@@ -477,7 +477,7 @@ include __DIR__ . '/includes/header.php';
   min-width:10px;
   margin-top:6px;
   border-radius:999px;
-  background:#ffd878;
+  background:#FF5557;
 }
 
 .fin-grid-3 {

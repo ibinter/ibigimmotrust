@@ -1053,7 +1053,7 @@ include __DIR__ . '/includes/header.php';
     --bien-blue-soft: #eef4ff;
     --bien-red:#E8282A;
     --bien-green: #16a34a;
-    --bien-gold: #d3a42f;
+    --bien-gold: #E8282A;
     --bien-text: #1f2937;
     --bien-muted: #667085;
     --bien-line: #e4e7ec;
