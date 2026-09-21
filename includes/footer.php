@@ -44,13 +44,13 @@
         <div>
           <div class="footer-col-title">Nos services</div>
           <div class="footer-links">
-            <a href="<?= BASE_URL ?>/immobilier.php"><i class="fa-solid fa-building" style="width:14px;color:var(--gold-dark);font-size:11px;"></i> Immobilier</a>
-            <a href="<?= BASE_URL ?>/btp.php"><i class="fa-solid fa-helmet-safety" style="width:14px;color:var(--gold-dark);font-size:11px;"></i> BTP &amp; Construction</a>
-            <a href="<?= BASE_URL ?>/financement.php"><i class="fa-solid fa-coins" style="width:14px;color:var(--gold-dark);font-size:11px;"></i> Financement</a>
-            <a href="<?= BASE_URL ?>/diaspora.php"><i class="fa-solid fa-globe" style="width:14px;color:var(--gold-dark);font-size:11px;"></i> Espace Diaspora</a>
-            <a href="<?= BASE_URL ?>/tous_les_biens.php"><i class="fa-solid fa-location-dot" style="width:14px;color:var(--gold-dark);font-size:11px;"></i> Tous les biens</a>
-            <a href="<?= BASE_URL ?>/rdv.php"><i class="fa-regular fa-calendar-check" style="width:14px;color:var(--gold-dark);font-size:11px;"></i> Prendre RDV</a>
-            <a href="<?= BASE_URL ?>/faq.php"><i class="fa-solid fa-circle-question" style="width:14px;color:var(--gold-dark);font-size:11px;"></i> FAQ</a>
+            <a href="<?= BASE_URL ?>/immobilier.php"><i class="fa-solid fa-building" style="width:14px;color:rgba(255,255,255,0.5);font-size:11px;"></i> Immobilier</a>
+            <a href="<?= BASE_URL ?>/btp.php"><i class="fa-solid fa-helmet-safety" style="width:14px;color:rgba(255,255,255,0.5);font-size:11px;"></i> BTP &amp; Construction</a>
+            <a href="<?= BASE_URL ?>/financement.php"><i class="fa-solid fa-coins" style="width:14px;color:rgba(255,255,255,0.5);font-size:11px;"></i> Financement</a>
+            <a href="<?= BASE_URL ?>/diaspora.php"><i class="fa-solid fa-globe" style="width:14px;color:rgba(255,255,255,0.5);font-size:11px;"></i> Espace Diaspora</a>
+            <a href="<?= BASE_URL ?>/tous_les_biens.php"><i class="fa-solid fa-location-dot" style="width:14px;color:rgba(255,255,255,0.5);font-size:11px;"></i> Tous les biens</a>
+            <a href="<?= BASE_URL ?>/rdv.php"><i class="fa-regular fa-calendar-check" style="width:14px;color:rgba(255,255,255,0.5);font-size:11px;"></i> Prendre RDV</a>
+            <a href="<?= BASE_URL ?>/faq.php"><i class="fa-solid fa-circle-question" style="width:14px;color:rgba(255,255,255,0.5);font-size:11px;"></i> FAQ</a>
           </div>
         </div>
 
@@ -109,7 +109,7 @@
 
           <div style="margin-top:16px;">
             <a href="<?= BASE_URL ?>/contact.php"
-               style="display:inline-flex;align-items:center;gap:6px;padding:10px 20px;background:linear-gradient(135deg,var(--gold),var(--gold-dark));color:var(--navy);border-radius:999px;font-size:13px;font-weight:800;text-decoration:none;transition:all 0.3s ease;">
+               style="display:inline-flex;align-items:center;gap:6px;padding:10px 20px;background:linear-gradient(135deg,var(--gold),var(--gold-dark));color:#fff;border-radius:999px;font-size:13px;font-weight:800;text-decoration:none;transition:all 0.3s ease;">
               <i class="fa-solid fa-paper-plane"></i> Envoyer un message
             </a>
           </div>
@@ -123,27 +123,27 @@
   <div style="border-top:1px solid rgba(232,40,42,0.08);border-bottom:1px solid rgba(232,40,42,0.08);padding:16px 0;background:rgba(0,0,0,0.15);">
     <div class="container" style="display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:28px;">
       <div style="display:flex;align-items:center;gap:8px;font-size:12px;color:rgba(255,255,255,0.4);">
-        <i class="fa-solid fa-shield-halved" style="color:var(--gold);"></i>
+        <i class="fa-solid fa-shield-halved" style="color:#fff;"></i>
         <span>Transactions sécurisées</span>
       </div>
       <div style="width:1px;height:20px;background:rgba(255,255,255,0.08);"></div>
-      <div style="display:flex;align-items:center;gap:8px;font-size:12px;color:rgba(255,255,255,0.4);">
-        <i class="fa-solid fa-certificate" style="color:var(--gold);"></i>
+      <div style="display:flex;align-items:center;gap:8px;font-size:12px;color:rgba(255,255,255,0.6);">
+        <i class="fa-solid fa-certificate" style="color:#fff;"></i>
         <span>Professionnels certifiés</span>
       </div>
       <div style="width:1px;height:20px;background:rgba(255,255,255,0.08);"></div>
-      <div style="display:flex;align-items:center;gap:8px;font-size:12px;color:rgba(255,255,255,0.4);">
-        <i class="fa-solid fa-headset" style="color:var(--gold);"></i>
+      <div style="display:flex;align-items:center;gap:8px;font-size:12px;color:rgba(255,255,255,0.6);">
+        <i class="fa-solid fa-headset" style="color:#fff;"></i>
         <span>Support disponible</span>
       </div>
       <div style="width:1px;height:20px;background:rgba(255,255,255,0.08);"></div>
-      <div style="display:flex;align-items:center;gap:8px;font-size:12px;color:rgba(255,255,255,0.4);">
-        <i class="fa-solid fa-globe-africa" style="color:var(--gold);"></i>
+      <div style="display:flex;align-items:center;gap:8px;font-size:12px;color:rgba(255,255,255,0.6);">
+        <i class="fa-solid fa-globe-africa" style="color:#fff;"></i>
         <span>Service Diaspora</span>
       </div>
       <div style="width:1px;height:20px;background:rgba(255,255,255,0.08);"></div>
-      <div style="display:flex;align-items:center;gap:8px;font-size:12px;color:rgba(255,255,255,0.4);">
-        <i class="fa-solid fa-handshake" style="color:var(--gold);"></i>
+      <div style="display:flex;align-items:center;gap:8px;font-size:12px;color:rgba(255,255,255,0.6);">
+        <i class="fa-solid fa-handshake" style="color:#fff;"></i>
         <span>Partenaires financiers</span>
       </div>
     </div>
@@ -155,7 +155,7 @@
       <div class="footer-bottom-inner">
         <p class="footer-copyright">
           &copy; <?= date('Y') ?> <span>IBIG IMMO TRUST</span> — Un produit de
-          <a href="https://intermark-business.com" target="_blank" rel="noopener" style="color:var(--gold);font-weight:700;">IBIG SARL</a>
+          <a href="https://intermark-business.com" target="_blank" rel="noopener" style="color:#fff;font-weight:700;">IBIG SARL</a>
           · Tous droits réservés
         </p>
         <div class="footer-legal-links">
@@ -244,14 +244,14 @@
 .footer-social a:hover {
   background: var(--gold, #E8282A);
   border-color: var(--gold, #E8282A);
-  color: var(--navy, #1B4FD8);
+  color: #fff;
   transform: translateY(-2px);
 }
 
 .footer-col-title {
   font-size: 11px;
   font-weight: 800;
-  color: var(--gold, #E8282A);
+  color: #fff;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   margin-bottom: 18px;
@@ -285,7 +285,7 @@
 }
 
 .footer-links a:hover {
-  color: var(--gold, #E8282A);
+  color: #fff;
   padding-left: 4px;
 }
 
@@ -298,10 +298,10 @@
 
 .footer-contact-icon {
   width: 32px; height: 32px;
-  background: rgba(232,40,42,0.1);
+  background: rgba(232,40,42,0.2);
   border-radius: 8px;
   display: flex; align-items: center; justify-content: center;
-  color: var(--gold, #E8282A);
+  color: #fff;
   font-size: 13px;
   flex-shrink: 0;
 }
@@ -340,7 +340,7 @@
   color: rgba(255,255,255,0.3);
 }
 
-.footer-copyright span { color: var(--gold, #E8282A); font-weight: 700; }
+.footer-copyright span { color: #fff; font-weight: 700; }
 
 .footer-legal-links {
   display: flex;
@@ -355,7 +355,7 @@
   transition: color 0.25s;
 }
 
-.footer-legal-links a:hover { color: var(--gold, #E8282A); }
+.footer-legal-links a:hover { color: #fff; }
 
 @media (max-width: 1024px) {
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 40px; }
